@@ -1,0 +1,1 @@
+ALTER TABLE users ADD COLUMN must_change_password INTEGER NOT NULL DEFAULT 0; CREATE TABLE password_requests(id TEXT PRIMARY KEY,email TEXT NOT NULL,contact TEXT NOT NULL,created_at INTEGER NOT NULL,status TEXT NOT NULL DEFAULT 'pending');

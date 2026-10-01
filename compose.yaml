@@ -1,0 +1,52 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    ports: ["127.0.0.1:3100:3100"]
+    environment:
+      APP_ORIGIN: ${APP_ORIGIN:?Set APP_ORIGIN in .env}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?Set ADMIN_TOKEN in .env}
+      WORKER_TOKEN: ${WORKER_TOKEN:?Set WORKER_TOKEN in .env}
+      TRUST_PROXY: "1"
+      PAYMENT_ENABLED: ${PAYMENT_ENABLED:-false}
+      PAYMENT_PROVIDER: ${PAYMENT_PROVIDER:-jianpay}
+      JIANPAY_CLIENT_NO: ${JIANPAY_CLIENT_NO:-}
+      JIANPAY_KEY: ${JIANPAY_KEY:-}
+      JIANPAY_GATEWAY: ${JIANPAY_GATEWAY:-https://jpay.hzjianban.com}
+      CHECKOUT_URL: ${CHECKOUT_URL:-}
+      PAYMENT_SECRET: ${PAYMENT_SECRET:-}
+      PRODUCT_PRICES: ${PRODUCT_PRICES:-}
+    volumes: ["paperdesk-data:/app/data"]
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    restart: unless-stopped
+    depends_on: [web]
+    env_file: .env
+    environment:
+      UTAD_HEADLESS: "true"
+      PORTAL_URL: http://web:3100
+      WORKER_TOKEN: ${WORKER_TOKEN:?Set WORKER_TOKEN in .env}
+      ACADEMI_EMAIL: ${ACADEMI_EMAIL:?Set ACADEMI_EMAIL in .env}
+      ACADEMI_PASSWORD: ${ACADEMI_PASSWORD:?Set ACADEMI_PASSWORD in .env}
+    volumes: ["worker-data:/app/worker-data"]
+    init: true
+    shm_size: 1gb
+  https:
+    image: caddy:2
+    profiles: ["https"]
+    restart: unless-stopped
+    depends_on: [web]
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMAIN: ${DOMAIN:?Set DOMAIN in .env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+volumes:
+  paperdesk-data:
+  worker-data:
+  caddy-data:
+  caddy-config:

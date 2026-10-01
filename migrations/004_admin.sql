@@ -1,0 +1,1 @@
+ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'customer'; CREATE TABLE account_events(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,action TEXT NOT NULL,created_at INTEGER NOT NULL); CREATE INDEX idx_events_created ON account_events(created_at);

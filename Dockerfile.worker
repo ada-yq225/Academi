@@ -1,0 +1,10 @@
+FROM node:24-bookworm
+RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv libreoffice-writer fonts-noto-cjk && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --no-audit --no-fund && npm install --no-save playwright && npx playwright install --with-deps chromium
+COPY worker/requirements.txt /app/worker/requirements.txt
+RUN python3 -m venv /opt/worker-venv && /opt/worker-venv/bin/pip install --no-cache-dir -r worker/requirements.txt
+COPY worker /app/worker
+ENV PYTHON_BIN=/opt/worker-venv/bin/python
+CMD ["node", "worker/runner.mjs"]

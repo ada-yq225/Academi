@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+const base=process.env.APP_ORIGIN||'http://127.0.0.1:3200';let cookie='';
+async function api(route,body,headers={}){const r=await fetch(base+'/api/'+route,{method:body===undefined?'GET':'POST',headers:{...(body instanceof FormData?{}:{'Content-Type':'application/json'}),Cookie:cookie,...headers},body:body===undefined?undefined:body instanceof FormData||body instanceof Uint8Array?body:JSON.stringify(body)});const c=r.headers.get('set-cookie');if(c)cookie=c.split(';')[0];return r}
+const email='smoke-'+Date.now()+'@example.com',password=crypto.randomUUID();let r=await api('register',{email,password});assert.equal(r.status,200,await r.clone().text());
+r=await api('admin/codes',{count:1,credits:3},{Authorization:'Bearer '+process.env.ADMIN_TOKEN});assert.equal(r.status,200,await r.clone().text());const code=(await r.json()).codes[0];const results=await Promise.all([api('redeem',{code}),api('redeem',{code})]);assert.deepEqual(results.map(x=>x.status).sort(),[200,409]);assert.equal((await(await api('state')).json()).balance,3);
+const w={Authorization:'Bearer '+process.env.WORKER_TOKEN};r=await api('worker/claim',{},w);assert.equal(r.status,200,await r.clone().text());
+if(process.env.TEST_INPUT){const submit=async()=>{const f=new FormData();f.append('requestId',crypto.randomUUID());f.append('file',new File([fs.readFileSync(process.env.TEST_INPUT)],'infrastructure-test.pdf'));const r=await api('jobs',f);assert.equal(r.status,200,await r.clone().text());return(await r.json()).id};
+const id=await submit();let job=(await(await api('worker/claim',{},w)).json()).job;assert.equal(job.id,id);const h={...w,'X-Job-Lease':job.lease};
+for(const type of ['ai','similarity','restyled']){r=await api('worker/artifact/'+id+'/'+type,fs.readFileSync(process.env['TEST_'+type.toUpperCase()]),h);assert.equal(r.status,200,await r.clone().text())}
+for(let i=0;i<2;i++){r=await api('worker/complete/'+id,{aiScore:0,similarityScore:0},h);assert.equal(r.status,200,await r.clone().text())}
+r=await api('report/'+id+'/restyled');assert.equal(r.status,200);assert.equal(Buffer.from(await r.arrayBuffer()).subarray(0,5).toString(),'%PDF-');
+const ownerCookie=cookie;cookie='';r=await api('report/'+id+'/ai');assert.equal(r.status,401);cookie=ownerCookie;
+const bad=await submit();job=(await(await api('worker/claim',{},w)).json()).job;assert.equal(job.id,bad);for(let i=0;i<2;i++){r=await api('worker/fail/'+bad,{}, {...w,'X-Job-Lease':job.lease});assert.equal(r.status,200,await r.clone().text())}assert.equal((await(await api('state')).json()).balance,2)}
+r=await api('orders',{product:'single'});assert.equal(r.status,503);fs.writeFileSync('work/test-cookie.json',JSON.stringify({cookie}),{mode:0o600});console.log('PASS: independent registration, atomic CDK, task processing, report download, ownership, idempotent completion/refund, disabled payment');

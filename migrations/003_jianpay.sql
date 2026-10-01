@@ -1,0 +1,1 @@
+ALTER TABLE orders ADD COLUMN provider TEXT NOT NULL DEFAULT 'adapter'; ALTER TABLE orders ADD COLUMN provider_order_id TEXT; ALTER TABLE orders ADD COLUMN pay_url TEXT; ALTER TABLE orders ADD COLUMN last_checked_at INTEGER NOT NULL DEFAULT 0; CREATE UNIQUE INDEX idx_orders_provider_id ON orders(provider,provider_order_id) WHERE provider_order_id IS NOT NULL;

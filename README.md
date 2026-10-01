@@ -36,7 +36,7 @@ npx playwright install chromium
 npm run worker
 ```
 
-填写 ACADEMI 和 UTAD 的授权账号。核对机构当前的文稿入库设置后，才设置 `UTAD_DEFAULT_POLICY_ACCEPTED=true`。此配置是对当前机构设置的确认，不会自动修改官网入库策略。每个任务使用稳定标题及回执恢复，避免不确定状态下重复上传。
+填写 ACADEMI 和 UTAD 的授权账号。可填写 `ACADEMI_EMAIL_2` / `ACADEMI_PASSWORD_2` 增加第二个 AI 账号：新 AI 任务按两个账号轮流分配，同一任务重试保留原账号，分配状态保存在 `worker-data/`，不存储密码。核对机构当前的文稿入库设置后，才设置 `UTAD_DEFAULT_POLICY_ACCEPTED=true`。此配置是对当前机构设置的确认，不会自动修改官网入库策略。每个任务使用稳定标题及回执恢复，避免不确定状态下重复上传。
 
 生产部署使用 HTTPS 反向代理。`APP_ORIGIN` 填写实际地址；开启 `TRUST_PROXY=1` 时，代理必须覆盖 `X-Real-IP`，并禁止绕过代理直连后端。
 

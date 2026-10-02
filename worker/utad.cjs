@@ -47,7 +47,7 @@ const atomic = (p, v) => {fs.writeFileSync(p+'.tmp',JSON.stringify(v,null,2),{mo
    const popup=ctx.waitForEvent('page');
    await page.getByRole('button',{name:/^(Executar|Launch)$/,exact:true}).click();page=await popup;diagnosticPage=page;
   }
-  await page.waitForURL('**/originality/inbox/**');
+  await page.waitForURL('**/originality/inbox/**',{waitUntil:'domcontentloaded',timeout:120000});
   const inboxUrl=page.url();
   const row=page.getByRole('row').filter({has:page.getByText(title,{exact:true})});
   const probe=()=>scanPages({

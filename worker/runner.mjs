@@ -25,7 +25,15 @@ while(!stopping){let job;try{try{job=JSON.parse(await fs.readFile(state,'utf8'))
    await run(process.env.PYTHON_BIN||'python3',[path.join(home,'check_ai_word_limit.py'),input,path.join(dir,'ai-preflight.json')],{});
    const preflight=JSON.parse(await fs.readFile(path.join(dir,'ai-preflight.json'),'utf8'));
    similarityOnly=!preflight.aiEligible;similarityReason=preflight.reason;
-   await run(process.execPath,[path.join(home,'utad.cjs'),input],{RESULT_DIR:dir,UTAD_JOB_ID:job.id});
+   for(let attempt=0;attempt<3;attempt++){
+    try{await run(process.execPath,[path.join(home,'utad.cjs'),input],{RESULT_DIR:dir,UTAD_JOB_ID:job.id});break}
+    catch(e){
+     await fs.writeFile(path.join(dir,'utad-attempt-'+(attempt+1)+'.json'),JSON.stringify({time:new Date().toISOString(),error:e.message}),{mode:0o600});
+     if(attempt===2||!/Timeout \d+ms exceeded|net::ERR_|ECONNRESET|ETIMEDOUT|fetch failed/i.test(e.message))throw e;
+     console.log('Retrying Turnitin browser session',job.id,'attempt',attempt+2);
+     await sleep(10000*(attempt+1));
+    }
+   }
    if(!similarityOnly)for(let attempt=0;attempt<3;attempt++){
     try{await run(process.execPath,[path.join(home,'academi.cjs'),input],{RESULT_DIR:dir,ACADEMI_AI_ONLY:'true',...await academiCredentials(dir)});break}
     catch(e){await fs.writeFile(path.join(dir,'academi-attempt-'+(attempt+1)+'.json'),JSON.stringify({time:new Date().toISOString(),error:e.message}));if(/AI detection unavailable: word limit exceeded/i.test(e.message)){similarityOnly=true;break}if(attempt===2)throw e;console.log('Retrying AI report retrieval',job.id);await sleep(10000)}

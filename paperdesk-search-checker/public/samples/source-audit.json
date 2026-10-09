@@ -1,0 +1,1796 @@
+{
+  "startedAt": "2026-10-05T12:37:48.378Z",
+  "generatedAt": "2026-10-05T12:38:49.918Z",
+  "rounds": 3,
+  "targetCount": 25,
+  "checks": 75,
+  "groups": [
+    {
+      "id": "arxiv-api",
+      "label": "arXiv 检索 API",
+      "role": "search",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 0.56,
+      "distinctUrls": 1,
+      "evidence": [
+        "检索结果"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "检索结果"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "crossref",
+      "label": "Crossref 元数据 API",
+      "role": "metadata",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.79,
+      "distinctUrls": 1,
+      "evidence": [
+        "仅元数据"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "仅元数据"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": [],
+      "caution": "稳定获取的是元数据，不是全文库。"
+    },
+    {
+      "id": "epmc-search",
+      "label": "Europe PMC 检索 API",
+      "role": "search",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.45,
+      "distinctUrls": 1,
+      "evidence": [
+        "检索结果"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "检索结果"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "checks": 6,
+      "successes": 6,
+      "successRate": 100,
+      "medianSeconds": 1.15,
+      "distinctUrls": 2,
+      "evidence": [
+        "检索结果"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "检索结果"
+          ],
+          "errors": []
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "检索结果"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": [],
+      "caution": "本次6次成功；此前文稿测试曾触发验证码，不能据此认定长期稳定。"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "checks": 6,
+      "successes": 6,
+      "successRate": 100,
+      "medianSeconds": 1.87,
+      "distinctUrls": 2,
+      "evidence": [
+        "XML全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "XML全文"
+          ],
+          "errors": []
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "XML全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "arxiv-html",
+      "label": "arXiv HTML 全文",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 0.78,
+      "distinctUrls": 1,
+      "evidence": [
+        "HTML全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://arxiv.org/html/1706.03762v6",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "HTML全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "arxiv-pdf",
+      "label": "arXiv PDF",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.15,
+      "distinctUrls": 1,
+      "evidence": [
+        "PDF全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://arxiv.org/pdf/1502.03167v3",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "PDF全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "jmlr-page",
+      "label": "JMLR 论文页面",
+      "role": "abstract",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.21,
+      "distinctUrls": 1,
+      "evidence": [
+        "摘要/论文页面"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "摘要/论文页面"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "pmlr",
+      "label": "PMLR 会议全文",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.25,
+      "distinctUrls": 1,
+      "evidence": [
+        "PDF全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "PDF全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "jmlr",
+      "label": "JMLR 开放期刊",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.84,
+      "distinctUrls": 1,
+      "evidence": [
+        "PDF全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "PDF全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "acl-page",
+      "label": "ACL 论文页面",
+      "role": "abstract",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 1.9,
+      "distinctUrls": 1,
+      "evidence": [
+        "摘要/论文页面"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://aclanthology.org/N19-1423/",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "摘要/论文页面"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "acl",
+      "label": "ACL Anthology 会议全文",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 3,
+      "successRate": 100,
+      "medianSeconds": 2.99,
+      "distinctUrls": 1,
+      "evidence": [
+        "PDF全文"
+      ],
+      "errors": [],
+      "classification": "本次全通过",
+      "urls": [
+        {
+          "url": "https://aclanthology.org/N19-1423.pdf",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "PDF全文"
+          ],
+          "errors": []
+        }
+      ],
+      "failureKinds": []
+    },
+    {
+      "id": "openreview",
+      "label": "OpenReview PDF",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "HTTP 403"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://openreview.net/pdf?id=RIZCe7BuEp",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "HTTP 403"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "access-restricted"
+      ]
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "checks": 6,
+      "successes": 3,
+      "successRate": 50,
+      "medianSeconds": 3.16,
+      "distinctUrls": 2,
+      "evidence": [
+        "PDF全文"
+      ],
+      "errors": [
+        "来源文件超过10 MB"
+      ],
+      "classification": "部分样本超过文件上限",
+      "urls": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+          "checks": 3,
+          "successes": 3,
+          "evidence": [
+            "PDF全文"
+          ],
+          "errors": []
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bc97207e3979d1cc23109db0be0e8ed2-Paper-Conference.pdf",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "来源文件超过10 MB"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "size-limit"
+      ]
+    },
+    {
+      "id": "sciencedirect",
+      "label": "ScienceDirect 文章页面",
+      "role": "article-page",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "不能访问内网地址"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014723",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "不能访问内网地址"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "network-policy"
+      ],
+      "caution": "当前DNS返回非公网地址，被内网安全策略拦截；未实际访问到文章服务器。"
+    },
+    {
+      "id": "ieee",
+      "label": "IEEE DOI 文章页面",
+      "role": "article-page",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "正文不足或需要登录"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://doi.org/10.1109/radar.2008.4720850",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "正文不足或需要登录"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "unreadable"
+      ]
+    },
+    {
+      "id": "taylor",
+      "label": "Taylor & Francis DOI 页面",
+      "role": "article-page",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "HTTP 403"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://doi.org/10.1080/15235882.2004.10162614",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "HTTP 403"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "access-restricted"
+      ]
+    },
+    {
+      "id": "springer",
+      "label": "Springer DOI 文章页面",
+      "role": "article-page",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "来源跳转过多"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://doi.org/10.1007/11510888_23",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "来源跳转过多"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "redirect"
+      ]
+    },
+    {
+      "id": "cjig",
+      "label": "中国图象图形学报正文",
+      "role": "fulltext",
+      "checks": 3,
+      "successes": 2,
+      "successRate": 67,
+      "medianSeconds": 7.06,
+      "distinctUrls": 1,
+      "evidence": [
+        "结构化全文"
+      ],
+      "errors": [
+        "fetch failed"
+      ],
+      "classification": "本次间歇受限",
+      "urls": [
+        {
+          "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+          "checks": 3,
+          "successes": 2,
+          "evidence": [
+            "结构化全文"
+          ],
+          "errors": [
+            "fetch failed"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "transient-network"
+      ]
+    },
+    {
+      "id": "zhihu",
+      "label": "知乎文章页面",
+      "role": "web",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "HTTP 403"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://zhuanlan.zhihu.com/p/70758906",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "HTTP 403"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "access-restricted"
+      ]
+    },
+    {
+      "id": "mitpress",
+      "label": "MIT Press DOI 页面",
+      "role": "article-page",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "HTTP 403"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://doi.org/10.7551/mitpress/7475.003.0007",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "HTTP 403"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "access-restricted"
+      ]
+    },
+    {
+      "id": "csdn",
+      "label": "CSDN 文章页面",
+      "role": "web",
+      "checks": 3,
+      "successes": 0,
+      "successRate": 0,
+      "medianSeconds": null,
+      "distinctUrls": 1,
+      "evidence": [],
+      "errors": [
+        "fetch failed",
+        "HTTP 521"
+      ],
+      "classification": "本次全部失败",
+      "urls": [
+        {
+          "url": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+          "checks": 3,
+          "successes": 0,
+          "evidence": [],
+          "errors": [
+            "fetch failed",
+            "HTTP 521"
+          ]
+        }
+      ],
+      "failureKinds": [
+        "transient-network"
+      ]
+    }
+  ],
+  "attempts": [
+    {
+      "id": "arxiv-api",
+      "label": "arXiv 检索 API",
+      "role": "search",
+      "url": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "bytes": 7228,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 1,
+      "checkedAt": "2026-10-05T12:37:49.391Z"
+    },
+    {
+      "id": "crossref",
+      "label": "Crossref 元数据 API",
+      "role": "metadata",
+      "url": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "bytes": 3692,
+      "candidates": 3,
+      "evidence": "仅元数据",
+      "seconds": 2.02,
+      "checkedAt": "2026-10-05T12:37:50.399Z"
+    },
+    {
+      "id": "epmc-search",
+      "label": "Europe PMC 检索 API",
+      "role": "search",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "bytes": 2822,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 2.27,
+      "checkedAt": "2026-10-05T12:37:50.655Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "bytes": 33898,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.28,
+      "checkedAt": "2026-10-05T12:37:50.672Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "bytes": 101895,
+      "characters": 34120,
+      "evidence": "XML全文",
+      "seconds": 1.06,
+      "checkedAt": "2026-10-05T12:37:51.711Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "bytes": 34534,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.32,
+      "checkedAt": "2026-10-05T12:37:51.721Z"
+    },
+    {
+      "id": "arxiv-html",
+      "label": "arXiv HTML 全文",
+      "role": "fulltext",
+      "url": "https://arxiv.org/html/1706.03762v6",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/html/1706.03762v6",
+      "bytes": 188819,
+      "characters": 40302,
+      "evidence": "HTML全文",
+      "seconds": 0.78,
+      "checkedAt": "2026-10-05T12:37:52.496Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "bytes": 110682,
+      "characters": 37654,
+      "evidence": "XML全文",
+      "seconds": 2.11,
+      "checkedAt": "2026-10-05T12:37:52.784Z"
+    },
+    {
+      "id": "arxiv-pdf",
+      "label": "arXiv PDF",
+      "role": "fulltext",
+      "url": "https://arxiv.org/pdf/1502.03167v3",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/pdf/1502.03167v3",
+      "bytes": 173548,
+      "characters": 45675,
+      "evidence": "PDF全文",
+      "seconds": 1.16,
+      "checkedAt": "2026-10-05T12:37:52.871Z"
+    },
+    {
+      "id": "jmlr-page",
+      "label": "JMLR 论文页面",
+      "role": "abstract",
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "bytes": 6165,
+      "characters": 1578,
+      "evidence": "摘要/论文页面",
+      "seconds": 1.21,
+      "checkedAt": "2026-10-05T12:37:53.990Z"
+    },
+    {
+      "id": "pmlr",
+      "label": "PMLR 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "bytes": 318669,
+      "characters": 42792,
+      "evidence": "PDF全文",
+      "seconds": 1.25,
+      "checkedAt": "2026-10-05T12:37:54.119Z"
+    },
+    {
+      "id": "jmlr",
+      "label": "JMLR 开放期刊",
+      "role": "fulltext",
+      "url": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "bytes": 2869095,
+      "characters": 78362,
+      "evidence": "PDF全文",
+      "seconds": 1.84,
+      "checkedAt": "2026-10-05T12:37:54.332Z"
+    },
+    {
+      "id": "acl-page",
+      "label": "ACL 论文页面",
+      "role": "abstract",
+      "url": "https://aclanthology.org/N19-1423/",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423/",
+      "bytes": 42297,
+      "characters": 10334,
+      "evidence": "摘要/论文页面",
+      "seconds": 1.9,
+      "checkedAt": "2026-10-05T12:37:56.024Z"
+    },
+    {
+      "id": "acl",
+      "label": "ACL Anthology 会议全文",
+      "role": "fulltext",
+      "url": "https://aclanthology.org/N19-1423.pdf",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423.pdf",
+      "bytes": 786279,
+      "characters": 64185,
+      "evidence": "PDF全文",
+      "seconds": 2.99,
+      "checkedAt": "2026-10-05T12:37:56.979Z"
+    },
+    {
+      "id": "openreview",
+      "label": "OpenReview PDF",
+      "role": "fulltext",
+      "url": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "round": 1,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "seconds": 1.01,
+      "checkedAt": "2026-10-05T12:37:57.988Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "bytes": 569417,
+      "characters": 32624,
+      "evidence": "PDF全文",
+      "seconds": 3.9,
+      "checkedAt": "2026-10-05T12:37:58.236Z"
+    },
+    {
+      "id": "sciencedirect",
+      "label": "ScienceDirect 文章页面",
+      "role": "article-page",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014723",
+      "round": 1,
+      "ok": false,
+      "status": null,
+      "error": "不能访问内网地址",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 0,
+      "checkedAt": "2026-10-05T12:37:58.238Z",
+      "failureKind": "network-policy"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bc97207e3979d1cc23109db0be0e8ed2-Paper-Conference.pdf",
+      "round": 1,
+      "ok": false,
+      "status": null,
+      "error": "来源文件超过10 MB",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 3.67,
+      "checkedAt": "2026-10-05T12:37:59.698Z",
+      "failureKind": "size-limit"
+    },
+    {
+      "id": "ieee",
+      "label": "IEEE DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1109/radar.2008.4720850",
+      "round": 1,
+      "ok": false,
+      "status": null,
+      "error": "正文不足或需要登录",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 2.73,
+      "checkedAt": "2026-10-05T12:38:02.428Z",
+      "failureKind": "unreadable"
+    },
+    {
+      "id": "taylor",
+      "label": "Taylor & Francis DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1080/15235882.2004.10162614",
+      "round": 1,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://www.tandfonline.com/doi/abs/10.1080/15235882.2004.10162614",
+      "seconds": 2.05,
+      "checkedAt": "2026-10-05T12:38:04.474Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "springer",
+      "label": "Springer DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1007/11510888_23",
+      "round": 1,
+      "ok": false,
+      "status": null,
+      "error": "来源跳转过多",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 6.24,
+      "checkedAt": "2026-10-05T12:38:04.476Z",
+      "failureKind": "redirect"
+    },
+    {
+      "id": "cjig",
+      "label": "中国图象图形学报正文",
+      "role": "fulltext",
+      "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "round": 1,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "bytes": 296864,
+      "characters": 16986,
+      "evidence": "结构化全文",
+      "seconds": 7.06,
+      "checkedAt": "2026-10-05T12:38:05.047Z"
+    },
+    {
+      "id": "zhihu",
+      "label": "知乎文章页面",
+      "role": "web",
+      "url": "https://zhuanlan.zhihu.com/p/70758906",
+      "round": 1,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://zhuanlan.zhihu.com/p/70758906",
+      "seconds": 0.87,
+      "checkedAt": "2026-10-05T12:38:05.345Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "mitpress",
+      "label": "MIT Press DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.7551/mitpress/7475.003.0007",
+      "round": 1,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://direct.mit.edu/books/book/3284/chapter/103432/How-We-Represent-Space-Internal-versus-External",
+      "seconds": 2.21,
+      "checkedAt": "2026-10-05T12:38:06.684Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "csdn",
+      "label": "CSDN 文章页面",
+      "role": "web",
+      "url": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+      "round": 1,
+      "ok": false,
+      "status": null,
+      "error": "fetch failed",
+      "code": "ECONNRESET",
+      "finalUrl": null,
+      "seconds": 2.06,
+      "checkedAt": "2026-10-05T12:38:07.111Z",
+      "failureKind": "transient-network"
+    },
+    {
+      "id": "arxiv-api",
+      "label": "arXiv 检索 API",
+      "role": "search",
+      "url": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "bytes": 7228,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 0.53,
+      "checkedAt": "2026-10-05T12:38:07.644Z"
+    },
+    {
+      "id": "epmc-search",
+      "label": "Europe PMC 检索 API",
+      "role": "search",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "bytes": 2822,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 1.45,
+      "checkedAt": "2026-10-05T12:38:08.568Z"
+    },
+    {
+      "id": "crossref",
+      "label": "Crossref 元数据 API",
+      "role": "metadata",
+      "url": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "bytes": 3692,
+      "candidates": 3,
+      "evidence": "仅元数据",
+      "seconds": 1.46,
+      "checkedAt": "2026-10-05T12:38:08.570Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "bytes": 33803,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.1,
+      "checkedAt": "2026-10-05T12:38:08.743Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "bytes": 101895,
+      "characters": 34120,
+      "evidence": "XML全文",
+      "seconds": 0.78,
+      "checkedAt": "2026-10-05T12:38:09.347Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "bytes": 34534,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.15,
+      "checkedAt": "2026-10-05T12:38:09.723Z"
+    },
+    {
+      "id": "arxiv-html",
+      "label": "arXiv HTML 全文",
+      "role": "fulltext",
+      "url": "https://arxiv.org/html/1706.03762v6",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/html/1706.03762v6",
+      "bytes": 188819,
+      "characters": 40302,
+      "evidence": "HTML全文",
+      "seconds": 0.69,
+      "checkedAt": "2026-10-05T12:38:10.416Z"
+    },
+    {
+      "id": "arxiv-pdf",
+      "label": "arXiv PDF",
+      "role": "fulltext",
+      "url": "https://arxiv.org/pdf/1502.03167v3",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/pdf/1502.03167v3",
+      "bytes": 173548,
+      "characters": 45675,
+      "evidence": "PDF全文",
+      "seconds": 1.08,
+      "checkedAt": "2026-10-05T12:38:10.429Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "bytes": 110682,
+      "characters": 37654,
+      "evidence": "XML全文",
+      "seconds": 1.87,
+      "checkedAt": "2026-10-05T12:38:10.610Z"
+    },
+    {
+      "id": "jmlr-page",
+      "label": "JMLR 论文页面",
+      "role": "abstract",
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "bytes": 6165,
+      "characters": 1578,
+      "evidence": "摘要/论文页面",
+      "seconds": 0.77,
+      "checkedAt": "2026-10-05T12:38:11.203Z"
+    },
+    {
+      "id": "pmlr",
+      "label": "PMLR 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "bytes": 318669,
+      "characters": 42792,
+      "evidence": "PDF全文",
+      "seconds": 0.93,
+      "checkedAt": "2026-10-05T12:38:11.535Z"
+    },
+    {
+      "id": "jmlr",
+      "label": "JMLR 开放期刊",
+      "role": "fulltext",
+      "url": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "bytes": 2869095,
+      "characters": 78362,
+      "evidence": "PDF全文",
+      "seconds": 1.15,
+      "checkedAt": "2026-10-05T12:38:11.570Z"
+    },
+    {
+      "id": "acl-page",
+      "label": "ACL 论文页面",
+      "role": "abstract",
+      "url": "https://aclanthology.org/N19-1423/",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423/",
+      "bytes": 42297,
+      "characters": 10334,
+      "evidence": "摘要/论文页面",
+      "seconds": 2.2,
+      "checkedAt": "2026-10-05T12:38:13.733Z"
+    },
+    {
+      "id": "acl",
+      "label": "ACL Anthology 会议全文",
+      "role": "fulltext",
+      "url": "https://aclanthology.org/N19-1423.pdf",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423.pdf",
+      "bytes": 786279,
+      "characters": 64185,
+      "evidence": "PDF全文",
+      "seconds": 2.91,
+      "checkedAt": "2026-10-05T12:38:14.114Z"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "round": 2,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "bytes": 569417,
+      "characters": 32624,
+      "evidence": "PDF全文",
+      "seconds": 2.88,
+      "checkedAt": "2026-10-05T12:38:14.447Z"
+    },
+    {
+      "id": "openreview",
+      "label": "OpenReview PDF",
+      "role": "fulltext",
+      "url": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "round": 2,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "seconds": 0.99,
+      "checkedAt": "2026-10-05T12:38:15.109Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "sciencedirect",
+      "label": "ScienceDirect 文章页面",
+      "role": "article-page",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014723",
+      "round": 2,
+      "ok": false,
+      "status": null,
+      "error": "不能访问内网地址",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 0,
+      "checkedAt": "2026-10-05T12:38:15.111Z",
+      "failureKind": "network-policy"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bc97207e3979d1cc23109db0be0e8ed2-Paper-Conference.pdf",
+      "round": 2,
+      "ok": false,
+      "status": null,
+      "error": "来源文件超过10 MB",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 3.73,
+      "checkedAt": "2026-10-05T12:38:17.465Z",
+      "failureKind": "size-limit"
+    },
+    {
+      "id": "springer",
+      "label": "Springer DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1007/11510888_23",
+      "round": 2,
+      "ok": false,
+      "status": null,
+      "error": "来源跳转过多",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 3.5,
+      "checkedAt": "2026-10-05T12:38:18.609Z",
+      "failureKind": "redirect"
+    },
+    {
+      "id": "ieee",
+      "label": "IEEE DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1109/radar.2008.4720850",
+      "round": 2,
+      "ok": false,
+      "status": null,
+      "error": "正文不足或需要登录",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 1.6,
+      "checkedAt": "2026-10-05T12:38:19.062Z",
+      "failureKind": "unreadable"
+    },
+    {
+      "id": "mitpress",
+      "label": "MIT Press DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.7551/mitpress/7475.003.0007",
+      "round": 2,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://direct.mit.edu/books/book/3284/chapter/103432/How-We-Represent-Space-Internal-versus-External",
+      "seconds": 1.06,
+      "checkedAt": "2026-10-05T12:38:20.121Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "taylor",
+      "label": "Taylor & Francis DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1080/15235882.2004.10162614",
+      "round": 2,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://www.tandfonline.com/doi/abs/10.1080/15235882.2004.10162614",
+      "seconds": 1.62,
+      "checkedAt": "2026-10-05T12:38:20.225Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "zhihu",
+      "label": "知乎文章页面",
+      "role": "web",
+      "url": "https://zhuanlan.zhihu.com/p/70758906",
+      "round": 2,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://zhuanlan.zhihu.com/p/70758906",
+      "seconds": 0.65,
+      "checkedAt": "2026-10-05T12:38:20.773Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "csdn",
+      "label": "CSDN 文章页面",
+      "role": "web",
+      "url": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+      "round": 2,
+      "ok": false,
+      "status": 521,
+      "error": "HTTP 521",
+      "code": null,
+      "finalUrl": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+      "seconds": 1.77,
+      "checkedAt": "2026-10-05T12:38:21.993Z",
+      "failureKind": "transient-network"
+    },
+    {
+      "id": "cjig",
+      "label": "中国图象图形学报正文",
+      "role": "fulltext",
+      "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "round": 2,
+      "ok": false,
+      "status": null,
+      "error": "fetch failed",
+      "code": "UND_ERR_CONNECT_TIMEOUT",
+      "finalUrl": null,
+      "seconds": 10.47,
+      "checkedAt": "2026-10-05T12:38:24.916Z",
+      "failureKind": "transient-network"
+    },
+    {
+      "id": "arxiv-api",
+      "label": "arXiv 检索 API",
+      "role": "search",
+      "url": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://export.arxiv.org/api/query?search_query=ti:attention&max_results=3",
+      "bytes": 7228,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 0.56,
+      "checkedAt": "2026-10-05T12:38:25.474Z"
+    },
+    {
+      "id": "epmc-search",
+      "label": "Europe PMC 检索 API",
+      "role": "search",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=3&query=fruit%20counting%20AND%20OPEN_ACCESS:Y",
+      "bytes": 2822,
+      "candidates": 3,
+      "evidence": "检索结果",
+      "seconds": 1.39,
+      "checkedAt": "2026-10-05T12:38:26.304Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=Batch%20Normalization%20Ioffe",
+      "bytes": 33721,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.02,
+      "checkedAt": "2026-10-05T12:38:26.490Z"
+    },
+    {
+      "id": "crossref",
+      "label": "Crossref 元数据 API",
+      "role": "metadata",
+      "url": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://api.crossref.org/works?rows=3&query.bibliographic=Batch%20Normalization",
+      "bytes": 3693,
+      "candidates": 3,
+      "evidence": "仅元数据",
+      "seconds": 1.79,
+      "checkedAt": "2026-10-05T12:38:26.707Z"
+    },
+    {
+      "id": "ddg",
+      "label": "DuckDuckGo 免费搜索",
+      "role": "search",
+      "url": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://html.duckduckgo.com/html/?q=next%20sentence%20prediction%20jointly%20pretrains%20text-pair%20representations",
+      "bytes": 34534,
+      "candidates": 10,
+      "evidence": "检索结果",
+      "seconds": 1.06,
+      "checkedAt": "2026-10-05T12:38:27.367Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "bytes": 101895,
+      "characters": 34120,
+      "evidence": "XML全文",
+      "seconds": 1.42,
+      "checkedAt": "2026-10-05T12:38:27.910Z"
+    },
+    {
+      "id": "arxiv-pdf",
+      "label": "arXiv PDF",
+      "role": "fulltext",
+      "url": "https://arxiv.org/pdf/1502.03167v3",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/pdf/1502.03167v3",
+      "bytes": 173548,
+      "characters": 45675,
+      "evidence": "PDF全文",
+      "seconds": 1.15,
+      "checkedAt": "2026-10-05T12:38:28.521Z"
+    },
+    {
+      "id": "epmc-xml",
+      "label": "Europe PMC XML 全文",
+      "role": "fulltext",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "bytes": 110682,
+      "characters": 37654,
+      "evidence": "XML全文",
+      "seconds": 2.44,
+      "checkedAt": "2026-10-05T12:38:29.147Z"
+    },
+    {
+      "id": "arxiv-html",
+      "label": "arXiv HTML 全文",
+      "role": "fulltext",
+      "url": "https://arxiv.org/html/1706.03762v6",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://arxiv.org/html/1706.03762v6",
+      "bytes": 188819,
+      "characters": 40302,
+      "evidence": "HTML全文",
+      "seconds": 1.26,
+      "checkedAt": "2026-10-05T12:38:29.175Z"
+    },
+    {
+      "id": "jmlr-page",
+      "label": "JMLR 论文页面",
+      "role": "abstract",
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "bytes": 6165,
+      "characters": 1578,
+      "evidence": "摘要/论文页面",
+      "seconds": 1.53,
+      "checkedAt": "2026-10-05T12:38:30.675Z"
+    },
+    {
+      "id": "pmlr",
+      "label": "PMLR 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.mlr.press/v37/ioffe15.pdf",
+      "bytes": 318669,
+      "characters": 42792,
+      "evidence": "PDF全文",
+      "seconds": 1.58,
+      "checkedAt": "2026-10-05T12:38:30.756Z"
+    },
+    {
+      "id": "jmlr",
+      "label": "JMLR 开放期刊",
+      "role": "fulltext",
+      "url": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "bytes": 2869095,
+      "characters": 78362,
+      "evidence": "PDF全文",
+      "seconds": 2.37,
+      "checkedAt": "2026-10-05T12:38:30.886Z"
+    },
+    {
+      "id": "acl-page",
+      "label": "ACL 论文页面",
+      "role": "abstract",
+      "url": "https://aclanthology.org/N19-1423/",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423/",
+      "bytes": 42297,
+      "characters": 10334,
+      "evidence": "摘要/论文页面",
+      "seconds": 1.85,
+      "checkedAt": "2026-10-05T12:38:32.608Z"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "bytes": 569417,
+      "characters": 32624,
+      "evidence": "PDF全文",
+      "seconds": 3.16,
+      "checkedAt": "2026-10-05T12:38:34.047Z"
+    },
+    {
+      "id": "acl",
+      "label": "ACL Anthology 会议全文",
+      "role": "fulltext",
+      "url": "https://aclanthology.org/N19-1423.pdf",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://aclanthology.org/N19-1423.pdf",
+      "bytes": 786279,
+      "characters": 64185,
+      "evidence": "PDF全文",
+      "seconds": 4.06,
+      "checkedAt": "2026-10-05T12:38:34.736Z"
+    },
+    {
+      "id": "openreview",
+      "label": "OpenReview PDF",
+      "role": "fulltext",
+      "url": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "round": 3,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "seconds": 1.81,
+      "checkedAt": "2026-10-05T12:38:35.856Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "sciencedirect",
+      "label": "ScienceDirect 文章页面",
+      "role": "article-page",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014723",
+      "round": 3,
+      "ok": false,
+      "status": null,
+      "error": "不能访问内网地址",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 0,
+      "checkedAt": "2026-10-05T12:38:35.859Z",
+      "failureKind": "network-policy"
+    },
+    {
+      "id": "neurips",
+      "label": "NeurIPS 会议全文",
+      "role": "fulltext",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bc97207e3979d1cc23109db0be0e8ed2-Paper-Conference.pdf",
+      "round": 3,
+      "ok": false,
+      "status": null,
+      "error": "来源文件超过10 MB",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 4.09,
+      "checkedAt": "2026-10-05T12:38:36.699Z",
+      "failureKind": "size-limit"
+    },
+    {
+      "id": "ieee",
+      "label": "IEEE DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1109/radar.2008.4720850",
+      "round": 3,
+      "ok": false,
+      "status": null,
+      "error": "正文不足或需要登录",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 1.43,
+      "checkedAt": "2026-10-05T12:38:38.133Z",
+      "failureKind": "unreadable"
+    },
+    {
+      "id": "cjig",
+      "label": "中国图象图形学报正文",
+      "role": "fulltext",
+      "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "round": 3,
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "bytes": 296864,
+      "characters": 16986,
+      "evidence": "结构化全文",
+      "seconds": 4.75,
+      "checkedAt": "2026-10-05T12:38:39.485Z"
+    },
+    {
+      "id": "taylor",
+      "label": "Taylor & Francis DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1080/15235882.2004.10162614",
+      "round": 3,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://www.tandfonline.com/doi/abs/10.1080/15235882.2004.10162614",
+      "seconds": 1.39,
+      "checkedAt": "2026-10-05T12:38:39.519Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "springer",
+      "label": "Springer DOI 文章页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.1007/11510888_23",
+      "round": 3,
+      "ok": false,
+      "status": null,
+      "error": "来源跳转过多",
+      "code": null,
+      "finalUrl": null,
+      "seconds": 3.94,
+      "checkedAt": "2026-10-05T12:38:39.799Z",
+      "failureKind": "redirect"
+    },
+    {
+      "id": "zhihu",
+      "label": "知乎文章页面",
+      "role": "web",
+      "url": "https://zhuanlan.zhihu.com/p/70758906",
+      "round": 3,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://zhuanlan.zhihu.com/p/70758906",
+      "seconds": 0.63,
+      "checkedAt": "2026-10-05T12:38:40.152Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "mitpress",
+      "label": "MIT Press DOI 页面",
+      "role": "article-page",
+      "url": "https://doi.org/10.7551/mitpress/7475.003.0007",
+      "round": 3,
+      "ok": false,
+      "status": 403,
+      "error": "HTTP 403",
+      "code": null,
+      "finalUrl": "https://direct.mit.edu/books/book/3284/chapter/103432/How-We-Represent-Space-Internal-versus-External",
+      "seconds": 1.25,
+      "checkedAt": "2026-10-05T12:38:40.737Z",
+      "failureKind": "access-restricted"
+    },
+    {
+      "id": "csdn",
+      "label": "CSDN 文章页面",
+      "role": "web",
+      "url": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+      "round": 3,
+      "ok": false,
+      "status": null,
+      "error": "fetch failed",
+      "code": "UND_ERR_CONNECT_TIMEOUT",
+      "finalUrl": null,
+      "seconds": 10.11,
+      "checkedAt": "2026-10-05T12:38:49.914Z",
+      "failureKind": "transient-network"
+    }
+  ],
+  "notes": [
+    "当前本机网络与代理环境的短时实测；不是长期SLA或整个网站覆盖率。",
+    "不使用来源缓存；每轮实际发起GET。HTTP成功仍检查验证码、内容类型和可提取文字。",
+    "元数据、摘要、文章页面和开放全文分别统计；HTTP 200不等于拿到全文。",
+    "HTTP下载截止15秒、最多10MB；DNS解析与文本提取另有截止时间，不自动重试；失效网址、大文件和登录限制单列，不能归因于整站故障。"
+  ],
+  "successes": 47,
+  "failed": 28
+}

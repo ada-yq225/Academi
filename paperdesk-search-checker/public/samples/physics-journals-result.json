@@ -1,0 +1,503 @@
+{
+  "similarity": 63,
+  "matchedCharacters": 194,
+  "totalCharacters": 308,
+  "minMatchTokens": 5,
+  "matchThresholds": {
+    "english": 5,
+    "chinese": 10
+  },
+  "results": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 114,
+      "text": "This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 113
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-1",
+          "url": "https://arxiv.org/pdf/1602.03837v1",
+          "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 113
+            }
+          ],
+          "excerpt": "y stellar-mass black hole systems. This is the first direct\ndetection of gravitational waves and the first observation of a binary black hole merger.\nDOI: 10.1103/PhysRevLett.116.061102\nI. INTRODUCTION\nIn 1916, the year after the final formulation of the "
+        },
+        {
+          "id": "source-2",
+          "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves",
+          "title": "First observation of gravitational waves - Wikipedia",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 62,
+              "end": 113
+            }
+          ],
+          "excerpt": "on 2015-09-14).[3][11] It was also the first observation of a binary black hole merger, demonstrating both the existence of binary stellar-mass black hole systems and the fact that such mergers could occur within the current age of the universe. This firs"
+        },
+        {
+          "id": "source-4",
+          "url": "https://news.mit.edu/2016/ligo-first-detection-gravitational-waves-0211",
+          "title": "Scientists make first direct detection of gravitational waves | MIT News | Massachusetts Institute of Technology",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 8,
+              "end": 57
+            },
+            {
+              "start": 87,
+              "end": 113
+            }
+          ],
+          "excerpt": "on LIGO’s origins Letter regarding the first direct detection of gravitational waves Advanced LIGO set to begin science operations 3Q: Getting ever closer to observing gravitational waves More MIT News Met Warehouse dedication ceremony launches new era On"
+        },
+        {
+          "id": "source-6",
+          "url": "https://oajournals.fupress.net/index.php/cdg/article/view/8705",
+          "title": "The first direct observation of gravitational waves: a new window on the Universe\n\t\t\t\t\t\t\t| Il Colle di Galileo",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 8,
+              "end": 57
+            }
+          ],
+          "excerpt": "sempre nuove \nIn addition to being the first direct detection of gravitational waves, that of GW150914 \ntherefore also represents the first direct observation of black holes, the first observation of \nthe coalescence of a binary system of black holes and "
+        },
+        {
+          "id": "source-8",
+          "url": "https://physicstoday.aip.org/news/ligo-finds-first-direct-evidence-of-gravitational-waves",
+          "title": "LIGO finds first direct evidence of gravitational waves - Physics Today",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 8,
+              "end": 37
+            },
+            {
+              "start": 62,
+              "end": 88
+            }
+          ],
+          "excerpt": "nd 30 solar masses. Not only is it the first direct detection of a gravitational wave, it is also the first observation of a black hole merger. © 2016 American Institute of Physics Related content News / Article Taryn Elliott helps companies protect and c"
+        },
+        {
+          "id": "source-14",
+          "url": "https://pos.sissa.it/282/333",
+          "title": "PoS - Doing outreach with the first direct observation of gravitational waves",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 18,
+              "end": 57
+            },
+            {
+              "start": 87,
+              "end": 113
+            }
+          ],
+          "excerpt": "in’s General Theory \nof Relativity\nDirect Detection of Gravitational Waves\nNewton’s great insight was to realize that the same influence \nthat makes objects fall toward the ground on Earth also \nkeeps the planets and other celestial bodies in their orbits"
+        }
+      ],
+      "matchedCharacters": 95,
+      "totalCharacters": 95,
+      "similarity": 100
+    },
+    {
+      "index": 2,
+      "start": 116,
+      "end": 244,
+      "text": "This artificial comparison juxtaposes astrophysical observations with particle experiments solely to assess retrieval diversity.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 114,
+      "similarity": 0
+    },
+    {
+      "index": 3,
+      "start": 246,
+      "end": 366,
+      "text": "A search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector at the LHC is presented.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 119
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-3",
+          "url": "https://arxiv.org/pdf/1207.7214v2",
+          "title": "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 119
+            }
+          ],
+          "excerpt": "utions to the experiment.\nAbstract\nA search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector\nat the LHC is presented. The datasets used correspond to inte grated luminosities of approximately\n4.8 fb−1 collected at √s "
+        },
+        {
+          "id": "source-5",
+          "url": "https://arxiv.org/pdf/1207.7235v2",
+          "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 2,
+              "end": 46
+            }
+          ],
+          "excerpt": "22] ATLAS Collaboration, “Combined search for the Standard Model Higgs boson in pp\ncollisions at√s = 7 TeV with the ATLAS detector”, Phys. Rev. D 86 (2012) 032003,\ndoi:10.1103/PhysRevD.86.032003, arXiv:1207.0319.\n[23] LHC Higgs Cross Section Working Group"
+        },
+        {
+          "id": "source-7",
+          "url": "https://arxiv.org/pdf/1202.1488v1",
+          "title": "Combined results of searches for the standard model Higgs boson in pp collisions at sqrt(s) = 7 TeV",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 2,
+              "end": 46
+            }
+          ],
+          "excerpt": "ett.\n13\n[13] ATLAS Collaboration, “Search for the Standard Model Higgs boson in the decay channel\nH→ ZZ (∗)→ 4ℓ with the ATLAS detector”, Phys. Lett. B 705 (2011) 435–451,\narXiv:1109.5945. doi:10.1016/j.physletb.2011.10.034.\n[14] ATLAS Collaboration, “Sea"
+        },
+        {
+          "id": "source-15",
+          "url": "https://arxiv.org/abs/2405.18149",
+          "title": "[2405.18149] Search for a standard model-like Higgs boson in the mass range between 70 and 110 GeV in the diphoton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 2,
+              "end": 43
+            },
+            {
+              "start": 61,
+              "end": 95
+            }
+          ],
+          "excerpt": "servation of a new particle in the search for the standard\nmodel Higgs boson with the ATLAS detector at the LHC”, Phys. Lett. B 716 (2012) 1,\ndoi:10.1016/j.physletb.2012.08.020, arXiv:1207.7214.\n[11] CMS Collaboration, “Observation of a new boson at a mas"
+        },
+        {
+          "id": "source-16",
+          "url": "https://arxiv.org/pdf/2405.18149",
+          "title": "Search for a standard model-like Higgs boson in the mass range between ...",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 2,
+              "end": 43
+            },
+            {
+              "start": 61,
+              "end": 95
+            }
+          ],
+          "excerpt": "servation of a new particle in the search for the standard\nmodel Higgs boson with the ATLAS detector at the LHC”, Phys. Lett. B 716 (2012) 1,\ndoi:10.1016/j.physletb.2012.08.020, arXiv:1207.7214.\n[11] CMS Collaboration, “Observation of a new boson at a mas"
+        },
+        {
+          "id": "source-17",
+          "url": "https://cmsexperiment.web.cern.ch/news/using-golden-decay-channel-understand-production-higgs-boson",
+          "title": "Using the golden decay channel to understand the production of the Higgs boson | CMS Experiment",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 13,
+              "end": 43
+            }
+          ],
+          "excerpt": "ground and the (red) prediction of the standard model Higgs boson. There is a very clear peak at 125 GeV, the mass of the Higgs boson, in a place where the background does not show a peak at all. In addition to more collisions, other improvements were mad"
+        },
+        {
+          "id": "source-18",
+          "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.83.114034",
+          "title": "Central exclusive quark-antiquark dijet and standard model Higgs boson production in proton-(anti)proton collisions  |  Phys. Rev. D",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 32,
+              "end": 71
+            }
+          ],
+          "excerpt": "lusive production of qq¯ pairs and Higgs boson in proton-proton collisions at LHC. The amplitude for the process is derived within the k⊥-factorization approach and considered in different kinematical asymptotics, in particular, in the important high quar"
+        }
+      ],
+      "matchedCharacters": 99,
+      "totalCharacters": 99,
+      "similarity": 100
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/1602.03837v1",
+      "landingUrl": "https://arxiv.org/abs/1602.03837v1",
+      "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+      "abstract": "On September 14, 2015 at 09:50:45 UTC the two detectors of the Laser Interferometer Gravitational-Wave Observatory simultaneously observed a transient gravitational-wave signal. The signal sweeps upwards in frequency from 35 to 250 Hz with a peak gravitational-wave strain of $1.0 \\times 10^{-21}$. It matches the waveform predicted by general relativity for the inspiral and merger of a pair of black holes and the ringdown of the resulting single black hole. The signal was observed with a matched-filter signal-to-noise ratio of 24 and a false alarm rate estimated to be less than 1 event per 203 000 years, equivalent to a significance greater than 5.1 σ. The source lies at a luminosity distance of $410^{+160}_{-180}$ Mpc corresponding to a redshift $z = 0.09^{+0.03}_{-0.04}$. In the source frame, the initial black hole masses are $36^{+5}_{-4} M_\\odot$ and $29^{+4}_{-4} M_\\odot$, and the final black hole mass is $62^{+4}_{-4} M_\\odot$, with $3.0^{+0.5}_{-0.5} M_\\odot c^2$ radiated in gravitational waves. All uncertainties define 90% credible intervals.These observations demonstrate the existence of binary stellar-mass black hole systems. This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-1"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves",
+      "title": "First observation of gravitational waves - Wikipedia",
+      "provider": "DuckDuckGo",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-2"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1207.7214v2",
+      "landingUrl": "https://arxiv.org/abs/1207.7214v2",
+      "title": "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC",
+      "abstract": "A search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector at the LHC is presented. The datasets used correspond to integrated luminosities of approximately 4.8 fb^-1 collected at sqrt(s) = 7 TeV in 2011 and 5.8 fb^-1 at sqrt(s) = 8 TeV in 2012. Individual searches in the channels H->ZZ^(*)->llll, H->gamma gamma and H->WW->e nu mu nu in the 8 TeV data are combined with previously published results of searches for H->ZZ^(*), WW^(*), bbbar and tau^+tau^- in the 7 TeV data and results from improved analyses of the H->ZZ^(*)->llll and H->gamma gamma channels in the 7 TeV data. Clear evidence for the production of a neutral boson with a measured mass of 126.0 +/- 0.4(stat) +/- 0.4(sys) GeV is presented. This observation, which has a significance of 5.9 standard deviations, corresponding to a background fluctuation probability of 1.7x10^-9, is compatible with the production and decay of the Standard Model Higgs boson.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-3"
+    },
+    {
+      "url": "https://news.mit.edu/2016/ligo-first-detection-gravitational-waves-0211",
+      "title": "Scientists make first direct detection of gravitational waves | MIT News | Massachusetts Institute of Technology",
+      "provider": "DuckDuckGo",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-4"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1207.7235v2",
+      "landingUrl": "https://arxiv.org/abs/1207.7235v2",
+      "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC",
+      "abstract": "Results are presented from searches for the standard model Higgs boson in proton-proton collisions at sqrt(s) = 7 and 8 TeV in the Compact Muon Solenoid experiment at the LHC, using data samples corresponding to integrated luminosities of up to 5.1 inverse femtobarns at 7 TeV and 5.3 inverse femtobarns at 8 TeV. The search is performed in five decay modes: gamma gamma, ZZ, WW, tau tau, and b b-bar. An excess of events is observed above the expected background, with a local significance of 5.0 standard deviations, at a mass near 125 GeV, signalling the production of a new particle. The expected significance for a standard model Higgs boson of that mass is 5.8 standard deviations. The excess is most significant in the two decay modes with the best mass resolution, gamma gamma and ZZ; a fit to these signals gives a mass of 125.3 +/- 0.4 (stat.) +/- 0.5 (syst.) GeV. The decay to two photons indicates that the new particle is a boson with spin different from one.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-5"
+    },
+    {
+      "url": "https://oajournals.fupress.net/index.php/cdg/article/view/8705",
+      "title": "The first direct observation of gravitational waves: a new window on the Universe\n\t\t\t\t\t\t\t| Il Colle di Galileo",
+      "doi": "10.13128/colle_galileo-19150",
+      "workType": "journal-article",
+      "provider": "Crossref",
+      "abstract": "The first direct observation of gravitational waves using the interferometer detectors of the LIGO-Virgo collaboration has marked the start of gravitational astronomy. The extreme difficulty of such measurements called for many years of hard work, but finally, on 14 September 2015, the signal produced by the coalescence of two black holes of large mass was observed.",
+      "fulltextUrl": "https://oajournals.fupress.net/index.php/cdg/article/download/8705/8703",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-6"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1202.1488v1",
+      "landingUrl": "https://arxiv.org/abs/1202.1488v1",
+      "title": "Combined results of searches for the standard model Higgs boson in pp collisions at sqrt(s) = 7 TeV",
+      "abstract": "Combined results are reported from searches for the standard model Higgs boson in proton-proton collisions at sqrt(s)=7 TeV in five Higgs boson decay modes: gamma pair, b-quark pair, tau lepton pair, W pair, and Z pair. The explored Higgs boson mass range is 110-600 GeV. The analysed data correspond to an integrated luminosity of 4.6-4.8 inverse femtobarns. The expected excluded mass range in the absence of the standard model Higgs boson is 118-543 GeV at 95% CL. The observed results exclude the standard model Higgs boson in the mass range 127-600 GeV at 95% CL, and in the mass range 129-525 GeV at 99% CL. An excess of events above the expected standard model background is observed at the low end of the explored mass range making the observed limits weaker than expected in the absence of a signal. The largest excess, with a local significance of 3.1 sigma, is observed for a Higgs boson mass hypothesis of 124 GeV. The global significance of observing an excess with a local significance greater than 3.1 sigma anywhere in the search range 110-600 (110-145) GeV is estimated to be 1.5 sigma (2.1 sigma). More data are required to ascertain the origin of this excess.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-7"
+    },
+    {
+      "url": "https://physicstoday.aip.org/news/ligo-finds-first-direct-evidence-of-gravitational-waves",
+      "title": "LIGO finds first direct evidence of gravitational waves - Physics Today",
+      "doi": "10.1063/pt.5.029570",
+      "workType": "journal-article",
+      "provider": "Crossref",
+      "abstract": "",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-8"
+    },
+    {
+      "url": "https://pos.sissa.it/282/333",
+      "title": "PoS - Doing outreach with the first direct observation of gravitational waves",
+      "doi": "10.22323/1.282.0333",
+      "workType": "proceedings-article",
+      "provider": "Crossref",
+      "abstract": "",
+      "fulltextUrl": "https://pos.sissa.it/282/333/pdf",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-14"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.18149",
+      "title": "[2405.18149] Search for a standard model-like Higgs boson in the mass range between 70 and 110 GeV in the diphoton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+      "provider": "DuckDuckGo",
+      "fulltextUrl": "https://arxiv.org/pdf/2405.18149",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-15"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2405.18149",
+      "title": "Search for a standard model-like Higgs boson in the mass range between ...",
+      "provider": "DuckDuckGo",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-16"
+    },
+    {
+      "url": "https://cmsexperiment.web.cern.ch/news/using-golden-decay-channel-understand-production-higgs-boson",
+      "title": "Using the golden decay channel to understand the production of the Higgs boson | CMS Experiment",
+      "provider": "DuckDuckGo",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-17"
+    },
+    {
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.83.114034",
+      "title": "Central exclusive quark-antiquark dijet and standard model Higgs boson production in proton-(anti)proton collisions  |  Phys. Rev. D",
+      "doi": "10.1103/physrevd.83.114034",
+      "workType": "journal-article",
+      "provider": "Crossref",
+      "abstract": "",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-18"
+    }
+  ],
+  "status": "partial",
+  "diagnostics": [
+    {
+      "stage": "开放期刊会议网站",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1093/nsr/nwx089",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://jmlr.org/papers/volume27/24-1929/24-1929.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.22541/au.161220228.87275329/v1",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/238597630b574e65fffb533444cf7d00-Paper-Conference.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.ligo.caltech.edu/detection",
+      "error": "fetch failed"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.ligo.caltech.edu/news/ligo20160211",
+      "error": "fetch failed"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1063/1.2348019",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://astro.theoj.org/",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1016/b978-0-444-88807-5.50076-5",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://aclanthology.org/2026.acl-long.843.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0370269324006257",
+      "error": "不能访问内网地址"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1007/978-3-030-25474-2_1",
+      "error": "来源跳转过多"
+    }
+  ],
+  "coverage": {
+    "sentences": 3,
+    "querySentences": 3,
+    "successfulSearchCalls": 13,
+    "queries": [
+      "the first direct detection of gravitational waves and the first observation of",
+      "This artificial comparison juxtaposes astrophysical observations with particle experiments solely to assess retrieval diversity.",
+      "for the Standard Model Higgs boson in proton-proton collisions with the"
+    ],
+    "providers": {
+      "网页检索": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 0
+      },
+      "Crossref": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 10,
+        "errors": 0
+      },
+      "arXiv": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 4,
+        "errors": 0
+      },
+      "Europe PMC": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "开放期刊会议网站": {
+        "calls": 3,
+        "successes": 1,
+        "candidates": 4,
+        "errors": 2
+      }
+    },
+    "cachedSources": 0,
+    "candidates": 30,
+    "fetchedCandidates": 30,
+    "readableSources": 18,
+    "fulltextSources": 11,
+    "abstractOnlySources": 0,
+    "unfetchedCandidates": 0,
+    "note": "在已获取来源中的文字重复占比；不代表全互联网重复率。未检索片段仍与全部已获取来源比对。"
+  },
+  "generatedAt": "2026-10-05T05:36:30.197Z"
+}

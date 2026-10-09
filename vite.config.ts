@@ -1,1 +1,1 @@
-import {defineConfig} from 'vite';import react from '@vitejs/plugin-react';export default defineConfig({plugins:[react()],resolve:{alias:{'@':process.cwd()}},build:{outDir:'dist/client',emptyOutDir:false,copyPublicDir:false}});
+import {defineConfig} from 'vite';import react from '@vitejs/plugin-react';export default defineConfig({plugins:[react()],resolve:{alias:{'@':process.cwd()}},build:{outDir:'dist/client',emptyOutDir:false,copyPublicDir:true}});

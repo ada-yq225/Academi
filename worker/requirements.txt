@@ -2,3 +2,4 @@ reportlab>=4,<5
 pypdf>=6,<7
 pdfplumber>=0.11,<1
 PyMuPDF>=1.26,<2
+Pillow>=10,<13

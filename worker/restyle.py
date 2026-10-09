@@ -38,6 +38,7 @@ def sheet(draw):
  b=io.BytesIO();c=canvas.Canvas(b,pagesize=(W,H));draw(c);c.save();b.seek(0);return PdfReader(b).pages[0]
 def rail(c,n,total,label):
  draw_brand(c,W,H)
+ text(c,166,H-34,'ACADEMI.CX 来源 · 非 Turnitin 官方报告',8,color=accent)
  for y in [34]:
   text(c,36,y,'ACADEMI.CX',9,'NotoSemiBold',accent)
   text(c,111,y,f'Page {n} of {total} - {label}',6)

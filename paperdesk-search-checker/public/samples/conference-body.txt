@@ -1,0 +1,5 @@
+本合成测试关注会议论文正文的匹配能力，而非只检索标题或摘要。
+
+In addition to the masked language model, we also use a “next sentence prediction” task that jointly pretrains text-pair representations.
+
+We will measure source discovery independently from matching accuracy in this specially constructed benchmark.

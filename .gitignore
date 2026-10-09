@@ -17,3 +17,17 @@ __pycache__/
 .DS_Store
 .venv/
 .pytest_cache/
+
+__pycache__/
+*.pyc
+*.sqlite*
+output/
+outputs/
+tmp/
+*.log
+*.publish-tmp
+.DS_Store
+paperdesk-search-checker/work/
+paperdesk-search-checker/test-expanded/
+
+node_modules

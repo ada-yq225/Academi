@@ -1,0 +1,174 @@
+{
+  "description": "人工合成的小样本验证集，未发表于真实期刊；出处只用于事后核对，不传给自动检索器。",
+  "cases": [
+    {
+      "id": "academic-regression",
+      "title": "上一轮期刊会议混合回归",
+      "parts": [
+        {
+          "kind": "original",
+          "text": "Synthetic benchmark: regularization and stable optimization across publication venues.",
+          "section": "摘要"
+        },
+        {
+          "kind": "copy",
+          "text": "Deep neural nets with a large number of parameters are very powerful machine learning systems.",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "This synthetic experiment connects regularization with optimization, but it does not claim to represent a published scientific study.",
+          "section": "摘要"
+        },
+        {
+          "kind": "copy",
+          "text": "Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training.",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "The benchmark deliberately combines small excerpts from different publication venues with independently written transition sentences.",
+          "section": "摘要"
+        },
+        {
+          "kind": "copy",
+          "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration.",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "本测试把期刊、会议与公开作者版本中的短片段混合，检查检索覆盖和逐句定位，不把搜索不到的内容判定为原创。",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "We measure whether the checker can discover those sources automatically rather than being handed the expected web addresses.",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "测试结果应分别报告开放全文与摘要覆盖，避免把只有论文标题的检索结果当作全文证据。",
+          "section": "摘要"
+        }
+      ],
+      "text": "Synthetic benchmark: regularization and stable optimization across publication venues.\n\nDeep neural nets with a large number of parameters are very powerful machine learning systems.\n\nThis synthetic experiment connects regularization with optimization, but it does not claim to represent a published scientific study.\n\nTraining Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training.\n\nThe benchmark deliberately combines small excerpts from different publication venues with independently written transition sentences.\n\nThe dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration.\n\n本测试把期刊、会议与公开作者版本中的短片段混合，检查检索覆盖和逐句定位，不把搜索不到的内容判定为原创。\n\nWe measure whether the checker can discover those sources automatically rather than being handed the expected web addresses.\n\n测试结果应分别报告开放全文与摘要覆盖，避免把只有论文标题的检索结果当作全文证据。"
+    },
+    {
+      "id": "conference-body",
+      "title": "会议论文正文与中文背景",
+      "parts": [
+        {
+          "kind": "original",
+          "text": "本合成测试关注会议论文正文的匹配能力，而非只检索标题或摘要。"
+        },
+        {
+          "kind": "copy",
+          "text": "In addition to the masked language model, we also use a “next sentence prediction” task that jointly pretrains text-pair representations.",
+          "source": "https://aclanthology.org/N19-1423/",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding - ACL Anthology",
+          "section": "正文"
+        },
+        {
+          "kind": "original",
+          "text": "We will measure source discovery independently from matching accuracy in this specially constructed benchmark."
+        }
+      ],
+      "text": "本合成测试关注会议论文正文的匹配能力，而非只检索标题或摘要。\n\nIn addition to the masked language model, we also use a “next sentence prediction” task that jointly pretrains text-pair representations.\n\nWe will measure source discovery independently from matching accuracy in this specially constructed benchmark."
+    },
+    {
+      "id": "agriculture-engineering",
+      "title": "农业与工程期刊正文混合",
+      "parts": [
+        {
+          "kind": "copy",
+          "text": "To address these challenges, in this research we developed a novel deep learning architecture which counts objects without detecting them.",
+          "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+          "title": "fruit",
+          "section": "正文"
+        },
+        {
+          "kind": "original",
+          "text": "The two experiments below belong to different application areas and should be attributed to their respective publications."
+        },
+        {
+          "kind": "copy",
+          "text": "Extracting image features and identifying feature patterns are two major steps of computer vision-based abnormal detection [4].",
+          "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+          "title": "rope",
+          "section": "正文"
+        },
+        {
+          "kind": "original",
+          "text": "这段原创过渡内容用于检验工程与农业文本混合时的高亮边界，不代表新的实证研究。"
+        }
+      ],
+      "text": "To address these challenges, in this research we developed a novel deep learning architecture which counts objects without detecting them.\n\nThe two experiments below belong to different application areas and should be attributed to their respective publications.\n\nExtracting image features and identifying feature patterns are two major steps of computer vision-based abnormal detection [4].\n\n这段原创过渡内容用于检验工程与农业文本混合时的高亮边界，不代表新的实证研究。"
+    },
+    {
+      "id": "chinese-journal",
+      "title": "中文期刊摘录与原创对照",
+      "parts": [
+        {
+          "kind": "original",
+          "text": "本组针对中文期刊的公开网页进行测试，确认汉字片段可以被检索并定位。"
+        },
+        {
+          "kind": "copy",
+          "text": "本文采用特征图切分的方式，从空间上对图像进行划分",
+          "source": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+          "title": "结合特征图切分的图像语义分割",
+          "section": "正文"
+        },
+        {
+          "kind": "original",
+          "text": "We keep this English transition independent from the Chinese research excerpt to check bilingual boundaries."
+        }
+      ],
+      "text": "本组针对中文期刊的公开网页进行测试，确认汉字片段可以被检索并定位。\n\n本文采用特征图切分的方式，从空间上对图像进行划分\n\nWe keep this English transition independent from the Chinese research excerpt to check bilingual boundaries."
+    },
+    {
+      "id": "physics-journals",
+      "title": "物理期刊公开版本混合",
+      "parts": [
+        {
+          "kind": "copy",
+          "text": "This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.",
+          "source": "https://arxiv.org/abs/1602.03837",
+          "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+          "section": "摘要"
+        },
+        {
+          "kind": "original",
+          "text": "This artificial comparison juxtaposes astrophysical observations with particle experiments solely to assess retrieval diversity."
+        },
+        {
+          "kind": "copy",
+          "text": "A search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector at the LHC is presented.",
+          "source": "https://arxiv.org/abs/1207.7214",
+          "title": "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC",
+          "section": "摘要"
+        }
+      ],
+      "text": "This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.\n\nThis artificial comparison juxtaposes astrophysical observations with particle experiments solely to assess retrieval diversity.\n\nA search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector at the LHC is presented."
+    },
+    {
+      "id": "original-control",
+      "title": "原创中英文负例",
+      "parts": [
+        {
+          "kind": "original",
+          "text": "Our evaluation distinguishes missing search coverage from evidence that a passage is original."
+        },
+        {
+          "kind": "original",
+          "text": "本段为当前测试新编写的中文对照内容，用来观察没有预设摘录的文稿是否被错误高亮。"
+        },
+        {
+          "kind": "original",
+          "text": "Each reported source must support a concrete matching span instead of being treated as relevant merely because of its title."
+        }
+      ],
+      "text": "Our evaluation distinguishes missing search coverage from evidence that a passage is original.\n\n本段为当前测试新编写的中文对照内容，用来观察没有预设摘录的文稿是否被错误高亮。\n\nEach reported source must support a concrete matching span instead of being treated as relevant merely because of its title."
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import fs from 'node:fs/promises';
+import {paperdeskFlow} from './paperdesk-flow.mjs';
 import {configuredAccounts,accountForJob} from './academi-accounts.mjs';
 import {officialReturn, digest} from './official-return.mjs';
 import path from 'node:path';
-import {spawn} from 'node:child_process';
+import {runProcess} from './run-process.mjs';
 import {fileURLToPath} from 'node:url';
 const home=path.dirname(fileURLToPath(import.meta.url));
 const base=process.env.PORTAL_URL,token=process.env.WORKER_TOKEN,root=path.resolve(process.env.WORKER_DATA||'worker-data');
@@ -13,7 +14,7 @@ const state=path.join(root,'active.json');
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function api(route,body={},job){let last;for(let attempt=0;attempt<3;attempt++){try{const r=await fetch(base+'/api/worker/'+route,{method:body===null?'GET':'POST',headers:{Authorization:'Bearer '+token,...(job?{'X-Job-Lease':job.lease}:{}),...(body instanceof Uint8Array?{'Content-Type':'application/pdf'}:{'Content-Type':'application/json'})},body:body===null?undefined:body instanceof Uint8Array?body:JSON.stringify(body),signal:AbortSignal.timeout(60000)});if(!r.ok){const error=Error('Portal '+r.status+' '+await r.text());error.retryable=r.status>=500;throw error}return r}catch(e){last=e;if(route==='claim'||e.retryable===false||attempt===2)throw e;await sleep(2000*(attempt+1))}}throw last}
 
-function run(command,args,env){return new Promise((resolve,reject)=>{const child=spawn(command,args,{env:{...process.env,...env},stdio:['ignore','inherit','pipe']});let detail='';child.stderr.on('data',data=>{process.stderr.write(data);detail=(detail+data.toString()).slice(-4000)});child.on('error',reject);child.on('exit',code=>code===0?resolve():reject(Error(detail.trim()||'Process exited '+code)))})}
+const run=(command,args,env)=>runProcess(command,args,env);
 async function academiCredentials(dir){const a=await accountForJob(root,dir,academiAccounts);return {ACADEMI_EMAIL:a.email,ACADEMI_PASSWORD:a.password}}
 let stopping=false;process.on('SIGTERM',()=>{stopping=true});process.on('SIGINT',()=>{stopping=true});
 while(!stopping){let job;try{try{job=JSON.parse(await fs.readFile(state,'utf8'))}catch{job=(await(await api('claim')).json()).job}if(!job){await sleep(15000);continue}if(job.started){const current=await(await api('status/'+job.id,null,job)).json();if(['completed','failed'].includes(current.status)){await fs.unlink(state);if(current.status==='completed'&&!await fs.stat(path.join(root,job.id,'official-return.json')).catch(()=>null)&&!await fs.stat(path.join(root,job.id,'utad-submission.json')).catch(()=>null))await fs.rm(path.join(root,job.id),{recursive:true,force:true});continue}}const dir=path.join(root,job.id);await fs.mkdir(dir,{recursive:true,mode:0o700});const filename=job.id+path.extname(job.input_key),input=path.join(dir,filename);if(!job.started){await fs.writeFile(input,Buffer.from(await(await api('input/'+job.id,null,job)).arrayBuffer()));await fs.writeFile(state,JSON.stringify({...job,started:true}),{mode:0o600})}
@@ -21,7 +22,7 @@ while(!stopping){let job;try{try{job=JSON.parse(await fs.readFile(state,'utf8'))
  await fs.writeFile(path.join(dir,'job.json.tmp'),JSON.stringify({id:job.id,filename:job.filename}),{mode:0o600});
  await fs.rename(path.join(dir,'job.json.tmp'),path.join(dir,'job.json'));
  const heartbeat=setInterval(()=>api('heartbeat/'+job.id,{},job).catch(e=>console.error(e.message)),20000);
- try{let imported=await officialReturn(dir,input,job.id),similarityOnly=false,similarityReason='word-limit';if(!imported&&process.env.SIMILARITY_PROVIDER==='utad'){
+ try{if(process.env.SIMILARITY_PROVIDER==='paperdesk'){await paperdeskFlow({job,input,dir,api,run,credentials:academiCredentials,sleep});}else{let imported=await officialReturn(dir,input,job.id),similarityOnly=false,similarityReason='word-limit';if(!imported&&process.env.SIMILARITY_PROVIDER==='utad'){
    await run(process.env.PYTHON_BIN||'python3',[path.join(home,'check_ai_word_limit.py'),input,path.join(dir,'ai-preflight.json')],{});
    const preflight=JSON.parse(await fs.readFile(path.join(dir,'ai-preflight.json'),'utf8'));
    similarityOnly=!preflight.aiEligible;similarityReason=preflight.reason;
@@ -61,7 +62,7 @@ while(!stopping){let job;try{try{job=JSON.parse(await fs.readFile(state,'utf8'))
   for(const type of ['ai','similarity','restyled','ai-restyled','similarity-restyled'])await api('artifact/'+job.id+'/'+type,await fs.readFile(path.join(dir,type.includes('restyled')?type+'.pdf':type+'-report.pdf')),job);
   await api('complete/'+job.id,info,job);console.log('Completed',job.id);
   }
- }catch(e){console.error('Job failed:',e.message);await fs.writeFile(path.join(dir,'failure.json'),JSON.stringify({time:new Date().toISOString(),error:e.message}));await api('fail/'+job.id,{reason:/existing submission preserved|manual reconciliation required/i.test(e.message)?'pending':/AI preflight word limit exceeded/i.test(e.message)?'aiPreflight':/AI detection unavailable: word limit exceeded/i.test(e.message)?'aiLimit':/manual review required|official report validation failed|report body differs/i.test(e.message)?'validation':/similarity/i.test(e.message)?'similarity':/font|align|LibreOffice/i.test(e.message)?'layout':'upstream'},job)}finally{clearInterval(heartbeat)}
+ }}catch(e){console.error('Job failed:',e.message);await fs.writeFile(path.join(dir,'failure.json'),JSON.stringify({time:new Date().toISOString(),error:e.message}));await api('fail/'+job.id,{reason:/existing submission preserved|manual reconciliation required/i.test(e.message)?'pending':/AI preflight word limit exceeded/i.test(e.message)?'aiPreflight':/AI detection unavailable: word limit exceeded/i.test(e.message)?'aiLimit':/manual review required|official report validation failed|report body differs/i.test(e.message)?'validation':/similarity/i.test(e.message)?'similarity':/font|align|LibreOffice/i.test(e.message)?'layout':'upstream'},job)}finally{clearInterval(heartbeat)}
  await fs.unlink(state);if(!await fs.stat(path.join(dir,'failure.json')).catch(()=>null)&&!await fs.stat(path.join(dir,'official-return.json')).catch(()=>null)&&!await fs.stat(path.join(dir,'utad-submission.json')).catch(()=>null))await fs.rm(dir,{recursive:true,force:true});
  if(process.env.WORKER_ONCE==='true')break;
  }catch(e){console.error(e.message);await sleep(15000)}}

@@ -1,0 +1,16 @@
+{
+  "name": "paperdesk-search-checker",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node --import ./scripts/local-runtime.mjs server.mjs",
+    "test": "node --import ./scripts/local-runtime.mjs --test tests/*.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "express": "^4.21.2",
+    "mammoth": "^1.10.0",
+    "multer": "^2.0.2"
+  }
+}

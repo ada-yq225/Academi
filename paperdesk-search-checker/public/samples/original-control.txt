@@ -1,0 +1,5 @@
+Our evaluation distinguishes missing search coverage from evidence that a passage is original.
+
+本段为当前测试新编写的中文对照内容，用来观察没有预设摘录的文稿是否被错误高亮。
+
+Each reported source must support a concrete matching span instead of being treated as relevant merely because of its title.

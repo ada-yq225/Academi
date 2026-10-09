@@ -1,0 +1,7 @@
+To address these challenges, in this research we developed a novel deep learning architecture which counts objects without detecting them.
+
+The two experiments below belong to different application areas and should be attributed to their respective publications.
+
+Extracting image features and identifying feature patterns are two major steps of computer vision-based abnormal detection [4].
+
+这段原创过渡内容用于检验工程与农业文本混合时的高亮边界，不代表新的实证研究。

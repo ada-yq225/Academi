@@ -1,0 +1,196 @@
+{
+  "similarity": 18,
+  "matchedCharacters": 43,
+  "totalCharacters": 237,
+  "minMatchTokens": 5,
+  "matchThresholds": {
+    "english": 5,
+    "chinese": 10
+  },
+  "results": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 30,
+      "text": "本合成测试关注会议论文正文的匹配能力，而非只检索标题或摘要。",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 28,
+      "similarity": 0
+    },
+    {
+      "index": 2,
+      "start": 32,
+      "end": 169,
+      "text": "In addition to the masked language model, we also use a “next sentence prediction” task that jointly pretrains text-pair representations.",
+      "spans": [
+        {
+          "start": 88,
+          "end": 136
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-1",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11698727/fullTextXML",
+          "title": "Using transformer-based models and social media posts for heat stroke detection.",
+          "scope": "开放论文XML全文",
+          "spans": [
+            {
+              "start": 88,
+              "end": 136
+            }
+          ],
+          "excerpt": "task uses next-sentence prediction that jointly pretrains text-pair representations. During the pretraining process, a model is created to capture the ability to fill in words and judge the relationship between two sentences. When performing a specific ta"
+        }
+      ],
+      "matchedCharacters": 43,
+      "totalCharacters": 113,
+      "similarity": 38
+    },
+    {
+      "index": 3,
+      "start": 171,
+      "end": 281,
+      "text": "We will measure source discovery independently from matching accuracy in this specially constructed benchmark.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 96,
+      "similarity": 0
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11698727/fullTextXML",
+      "title": "Using transformer-based models and social media posts for heat stroke detection.",
+      "abstract": "Event-based surveillance is crucial for the early detection and rapid response to potential public health risks. In recent years, social networking services (SNS) have been recognized for their potential role in this domain. Previous studies have demonstrated the capacity of SNS posts for the early detection of health crises and affected individuals, including those related to infectious diseases. However, the reliability of such posts, being subjective and not clinically diagnosed, remains a challenge. In this study, we address this issue by assessing the classification performance of transformer-based pretrained language models to accurately classify Japanese tweets related to heat stroke, a significant health effect of climate change, as true or false. We also evaluated the efficacy of combining SNS and artificial intelligence for event-based public health surveillance by visualizing the data on correctly classified tweets and heat stroke emergency medical evacuees in time-space and animated video, respectively. The transformer-based pretrained language models exhibited good performance in classifying the tweets. Spatiotemporal and animated video visualizations revealed a reasonable correlation. This study demonstrates the potential of using Japanese tweets and deep learning algorithms based on transformer networks for event-based surveillance at high spatiotemporal levels to enable early detection of heat stroke risks.",
+      "doi": "10.1038/s41598-024-84992-y",
+      "provider": "Europe PMC",
+      "workType": "Research Support, Non-U.S. Gov't, research-article, Journal Article",
+      "representation": "fulltext-xml",
+      "variantScopes": [
+        "开放论文XML全文",
+        "仅摘要元数据"
+      ],
+      "scope": "开放论文XML全文",
+      "truncated": false,
+      "id": "source-1"
+    }
+  ],
+  "status": "partial",
+  "diagnostics": [
+    {
+      "stage": "网页检索",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.14218/mrp.2017.034",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/00ed9ab006311be67879ecef8f80d7c5-Paper-Conference.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.64216/3104-9672.25.01.006",
+      "error": "HTTP 444"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://blog.csdn.net/zhangjiaoshou_/article/details/155246922",
+      "error": "HTTP 521"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.70677/ewkp5867",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1109/ises50453.2020.00025",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.5005/jp/books/11661_2",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1039/d6dd00247a",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1016/j.econlet.2019.108873",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    }
+  ],
+  "coverage": {
+    "sentences": 3,
+    "querySentences": 3,
+    "successfulSearchCalls": 12,
+    "queries": [
+      "本合成测试关注会议论文正文的匹配能力，而非只检索标题或摘要",
+      "next sentence prediction” task that jointly pretrains text-pair representations",
+      "We will measure source discovery independently from matching accuracy in this specially constructed benchmark."
+    ],
+    "providers": {
+      "网页检索": {
+        "calls": 3,
+        "successes": 2,
+        "candidates": 4,
+        "errors": 1
+      },
+      "Crossref": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 0
+      },
+      "arXiv": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "Europe PMC": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 3,
+        "errors": 0
+      },
+      "开放期刊会议网站": {
+        "calls": 3,
+        "successes": 1,
+        "candidates": 4,
+        "errors": 2
+      }
+    },
+    "cachedSources": 0,
+    "candidates": 23,
+    "fetchedCandidates": 23,
+    "readableSources": 16,
+    "fulltextSources": 10,
+    "abstractOnlySources": 2,
+    "unfetchedCandidates": 0,
+    "note": "在已获取来源中的文字重复占比；不代表全互联网重复率。未检索片段仍与全部已获取来源比对。"
+  },
+  "generatedAt": "2026-10-05T06:32:40.991Z"
+}

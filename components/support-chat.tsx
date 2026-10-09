@@ -1,8 +1,9 @@
 import {useEffect,useRef,useState} from 'react';
+import {requestJSON} from '../lib/client-api.mjs';
 import {MessageCircle} from 'lucide-react';
 import {Dialog,DialogContent,DialogHeader,DialogTitle,DialogDescription,DialogTrigger} from './ui/dialog';
 type Message={id:number,sender_role:string,body:string,created_at:number};
-async function call(path:string,body?:any){const r=await fetch('/api/support/'+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});const d=await r.json();if(!r.ok)throw Error(d.error||'连接失败');return d}
+const call=(path:string,body?:any)=>requestJSON('/api/support/'+path,body);
 function Conversation({customer,admin=false}:{customer?:string,admin?:boolean}){
  const [messages,setMessages]=useState<Message[]>([]),[draft,setDraft]=useState(''),[error,setError]=useState(''),[sending,setSending]=useState(false),[older,setOlder]=useState(false),[more,setMore]=useState(false);
  const request=useRef(crypto.randomUUID()),end=useRef<HTMLDivElement>(null),box=useRef<HTMLDivElement>(null),nearBottom=useRef(true);

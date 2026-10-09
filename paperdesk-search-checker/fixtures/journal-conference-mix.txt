@@ -1,0 +1,17 @@
+Synthetic benchmark: regularization and stable optimization across publication venues.
+
+Deep neural nets with a large number of parameters are very powerful machine learning systems.
+
+This synthetic experiment connects regularization with optimization, but it does not claim to represent a published scientific study.
+
+Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training.
+
+The benchmark deliberately combines small excerpts from different publication venues with independently written transition sentences.
+
+The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration.
+
+本测试把期刊、会议与公开作者版本中的短片段混合，检查检索覆盖和逐句定位，不把搜索不到的内容判定为原创。
+
+We measure whether the checker can discover those sources automatically rather than being handed the expected web addresses.
+
+测试结果应分别报告开放全文与摘要覆盖，避免把只有论文标题的检索结果当作全文证据。

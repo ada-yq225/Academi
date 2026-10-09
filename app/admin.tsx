@@ -1,10 +1,11 @@
 'use client';
+import {requestJSON} from '../lib/client-api.mjs';
 import {PasswordRequests,ResetCustomer} from '@/components/password-help';
 import {AdminSupport} from '@/components/support-chat';
 import {useEffect,useState} from 'react';import {Button} from '@/components/ui/button';import {Input} from '@/components/ui/input';
 export default function Admin(){
  const [user,setUser]=useState<any>(null),[data,setData]=useState<any>(null),[codes,setCodes]=useState<string[]>([]),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[tab,setTab]=useState('users'),[query,setQuery]=useState(''),[jobStatus,setJobStatus]=useState('all'),[announcementDraft,setAnnouncementDraft]=useState('');
- async function api(p:string,b?:any){const r=await fetch('/api/'+p,{method:b?'POST':'GET',headers:{'Content-Type':'application/json'},body:b?JSON.stringify(b):undefined});const d=await r.json();if(!r.ok)throw Error(d.error||'操作失败');return d}
+ const api=(p:string,b?:any)=>requestJSON('/api/'+p,b);
  async function load(){const s=await api('state');setUser(s.user);setAnnouncementDraft(s.announcement||'');if(s.user?.role==='admin')setData(await api('admin/overview'));else setData(null)}
  useEffect(()=>{load().catch(e=>setMessage(e.message))},[]);
  async function action(fn:()=>Promise<void>){setBusy(true);setMessage('');try{await fn()}catch(e:any){setMessage(e.message)}finally{setBusy(false)}}

@@ -1,0 +1,5 @@
+本组针对中文期刊的公开网页进行测试，确认汉字片段可以被检索并定位。
+
+本文采用特征图切分的方式，从空间上对图像进行划分
+
+We keep this English transition independent from the Chinese research excerpt to check bilingual boundaries.

@@ -23,9 +23,7 @@ services:
       dockerfile: Dockerfile.worker
     restart: unless-stopped
     depends_on: [web]
-    env_file: .env
     environment:
-      UTAD_HEADLESS: "true"
       PORTAL_URL: http://web:3100
       WORKER_TOKEN: ${WORKER_TOKEN:?Set WORKER_TOKEN in .env}
       ACADEMI_EMAIL: ${ACADEMI_EMAIL:?Set ACADEMI_EMAIL in .env}

@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {queryForSentence} from '../query.mjs';
+test('Queries prefer distinctive scientific phrases over introductory stopwords',()=>{const text='In addition to the masked language model, we also use a next sentence prediction task that jointly pretrains text-pair representations.';const q=queryForSentence(text);assert.ok(q.includes('prediction'));assert.ok(q.includes('representations'));assert.ok(!q.startsWith('to the'));assert.ok(text.includes(q));});
+test('Chinese queries remain long enough and never split a surrogate pair',()=>{const text='本研究提出一种基于特征图切分的图像语义分割方法，并验证不同区域的预测性能。';assert.ok(queryForSentence(text).length>=25);assert.ok(text.startsWith(queryForSentence(text)));});

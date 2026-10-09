@@ -1,0 +1,538 @@
+{
+  "generatedAt": "2026-10-05T06:36:00.650Z",
+  "automaticRetrieval": true,
+  "urlsProvided": false,
+  "verification": {
+    "unitChecks": 22,
+    "uploadChecks": 6
+  },
+  "description": "各组最近一次真实自动测试；不同组复测时间不同，未隐去初轮失败。",
+  "firstPass": {
+    "copySegments": 9,
+    "fullyMatchedCopies": 6,
+    "flaggedOriginalSentences": 0
+  },
+  "cases": [
+    {
+      "id": "academic-regression",
+      "title": "上一轮期刊会议混合回归",
+      "status": "partial",
+      "seconds": null,
+      "expectedScore": 38,
+      "actualScore": 38,
+      "copySegments": 3,
+      "fullyMatchedCopies": 3,
+      "partiallyMatchedCopies": 0,
+      "originalSentences": 6,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 43,
+      "fulltextSources": 21,
+      "abstractOnlySources": 2,
+      "providerStats": {
+        "网页检索": {
+          "calls": 9,
+          "successes": 9,
+          "candidates": 36,
+          "errors": 0
+        },
+        "Crossref": {
+          "calls": 9,
+          "successes": 9,
+          "candidates": 30,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 9,
+          "successes": 9,
+          "candidates": 2,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 9,
+          "successes": 9,
+          "candidates": 2,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 9,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 6
+        }
+      },
+      "copyRows": [
+        {
+          "text": "Deep neural nets with a large number of parameters are very powerful machine learning systems.",
+          "section": "摘要",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+              "title": "Deep Count: Fruit Counting Based on Deep Simulated Learning.",
+              "scope": "开放论文XML全文"
+            },
+            {
+              "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+              "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+              "scope": "开放论文PDF全文"
+            }
+          ]
+        },
+        {
+          "text": "Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training.",
+          "section": "摘要",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://arxiv.org/pdf/1502.03167v3",
+              "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+              "title": "Convolutional Autoencoder-Based Flaw Detection for Steel Wire Ropes.",
+              "scope": "开放论文XML全文"
+            },
+            {
+              "url": "https://arxiv.org/abs/1502.03167",
+              "title": "[1502.03167] Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+              "scope": "开放论文PDF全文"
+            }
+          ]
+        },
+        {
+          "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration.",
+          "section": "摘要",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://arxiv.org/pdf/1706.03762v7",
+              "title": "Attention Is All You Need",
+              "scope": "仅摘要元数据"
+            },
+            {
+              "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+              "title": "PDF Attention Is All You Need - NeurIPS",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://arxiv.org/html/1706.03762v6",
+              "title": "Attention Is All You Need",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://arxiv.org/abs/1706.03762",
+              "title": "[1706.03762] Attention Is All You Need",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://research.google.com/pubs/pub46201.html?source=post_page---------------------------",
+              "title": "Attention is All You Need",
+              "scope": "可访问网页文本"
+            }
+          ]
+        }
+      ],
+      "revision": "修复后自动复测",
+      "generatedAt": "2026-10-05T05:46:25.805Z"
+    },
+    {
+      "id": "conference-body",
+      "title": "会议论文正文与中文背景",
+      "status": "partial",
+      "seconds": null,
+      "expectedScore": 48,
+      "actualScore": 18,
+      "copySegments": 1,
+      "fullyMatchedCopies": 0,
+      "partiallyMatchedCopies": 1,
+      "originalSentences": 2,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 16,
+      "fulltextSources": 10,
+      "abstractOnlySources": 2,
+      "providerStats": {
+        "网页检索": {
+          "calls": 3,
+          "successes": 2,
+          "candidates": 4,
+          "errors": 1
+        },
+        "Crossref": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 3,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 3,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 2
+        }
+      },
+      "copyRows": [
+        {
+          "text": "In addition to the masked language model, we also use a “next sentence prediction” task that jointly pretrains text-pair representations.",
+          "section": "正文",
+          "expectedSource": "https://aclanthology.org/N19-1423/",
+          "matchPercentage": 38,
+          "matchedSources": [
+            {
+              "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11698727/fullTextXML",
+              "title": "Using transformer-based models and social media posts for heat stroke detection.",
+              "scope": "开放论文XML全文"
+            }
+          ]
+        }
+      ],
+      "revision": "修复后自动复测",
+      "generatedAt": "2026-10-05T06:32:40.991Z"
+    },
+    {
+      "id": "agriculture-engineering",
+      "title": "农业与工程期刊正文混合",
+      "status": "partial",
+      "seconds": 34,
+      "expectedScore": 61,
+      "actualScore": 61,
+      "copySegments": 2,
+      "fullyMatchedCopies": 2,
+      "partiallyMatchedCopies": 0,
+      "originalSentences": 2,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 11,
+      "fulltextSources": 7,
+      "abstractOnlySources": 0,
+      "providerStats": {
+        "网页检索": {
+          "calls": 4,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 3
+        },
+        "Crossref": {
+          "calls": 4,
+          "successes": 4,
+          "candidates": 13,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 4,
+          "successes": 4,
+          "candidates": 0,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 4,
+          "successes": 4,
+          "candidates": 2,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 4,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 3
+        }
+      },
+      "copyRows": [
+        {
+          "text": "To address these challenges, in this research we developed a novel deep learning architecture which counts objects without detecting them.",
+          "section": "正文",
+          "expectedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+              "title": "Deep Count: Fruit Counting Based on Deep Simulated Learning.",
+              "scope": "开放论文XML全文"
+            }
+          ]
+        },
+        {
+          "text": "Extracting image features and identifying feature patterns are two major steps of computer vision-based abnormal detection [4].",
+          "section": "正文",
+          "expectedSource": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+              "title": "Convolutional Autoencoder-Based Flaw Detection for Steel Wire Ropes.",
+              "scope": "开放论文XML全文"
+            }
+          ]
+        }
+      ],
+      "revision": "初轮自动测试",
+      "generatedAt": "2026-10-05T05:35:58.528Z"
+    },
+    {
+      "id": "chinese-journal",
+      "title": "中文期刊摘录与原创对照",
+      "status": "partial",
+      "seconds": null,
+      "expectedScore": 16,
+      "actualScore": 16,
+      "copySegments": 1,
+      "fullyMatchedCopies": 1,
+      "partiallyMatchedCopies": 0,
+      "originalSentences": 2,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 9,
+      "fulltextSources": 2,
+      "abstractOnlySources": 0,
+      "providerStats": {
+        "网页检索": {
+          "calls": 3,
+          "successes": 2,
+          "candidates": 8,
+          "errors": 1
+        },
+        "Crossref": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 3,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 2
+        }
+      },
+      "copyRows": [
+        {
+          "text": "本文采用特征图切分的方式，从空间上对图像进行划分",
+          "section": "正文",
+          "expectedSource": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+              "title": "结合特征图切分的图像语义分割",
+              "scope": "公开网页结构化正文"
+            }
+          ]
+        }
+      ],
+      "revision": "修复后自动复测",
+      "generatedAt": "2026-10-05T05:42:49.868Z"
+    },
+    {
+      "id": "physics-journals",
+      "title": "物理期刊公开版本混合",
+      "status": "partial",
+      "seconds": 32,
+      "expectedScore": 63,
+      "actualScore": 63,
+      "copySegments": 2,
+      "fullyMatchedCopies": 2,
+      "partiallyMatchedCopies": 0,
+      "originalSentences": 1,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 18,
+      "fulltextSources": 11,
+      "abstractOnlySources": 0,
+      "providerStats": {
+        "网页检索": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 0
+        },
+        "Crossref": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 10,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 4,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 3,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 2
+        }
+      },
+      "copyRows": [
+        {
+          "text": "This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.",
+          "section": "摘要",
+          "expectedSource": "https://arxiv.org/abs/1602.03837",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://arxiv.org/pdf/1602.03837v1",
+              "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves",
+              "title": "First observation of gravitational waves - Wikipedia",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://news.mit.edu/2016/ligo-first-detection-gravitational-waves-0211",
+              "title": "Scientists make first direct detection of gravitational waves | MIT News | Massachusetts Institute of Technology",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://oajournals.fupress.net/index.php/cdg/article/view/8705",
+              "title": "The first direct observation of gravitational waves: a new window on the Universe\n\t\t\t\t\t\t\t| Il Colle di Galileo",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://physicstoday.aip.org/news/ligo-finds-first-direct-evidence-of-gravitational-waves",
+              "title": "LIGO finds first direct evidence of gravitational waves - Physics Today",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://pos.sissa.it/282/333",
+              "title": "PoS - Doing outreach with the first direct observation of gravitational waves",
+              "scope": "开放论文PDF全文"
+            }
+          ]
+        },
+        {
+          "text": "A search for the Standard Model Higgs boson in proton-proton collisions with the ATLAS detector at the LHC is presented.",
+          "section": "摘要",
+          "expectedSource": "https://arxiv.org/abs/1207.7214",
+          "matchPercentage": 100,
+          "matchedSources": [
+            {
+              "url": "https://arxiv.org/pdf/1207.7214v2",
+              "title": "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://arxiv.org/pdf/1207.7235v2",
+              "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://arxiv.org/pdf/1202.1488v1",
+              "title": "Combined results of searches for the standard model Higgs boson in pp collisions at sqrt(s) = 7 TeV",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://arxiv.org/abs/2405.18149",
+              "title": "[2405.18149] Search for a standard model-like Higgs boson in the mass range between 70 and 110 GeV in the diphoton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://arxiv.org/pdf/2405.18149",
+              "title": "Search for a standard model-like Higgs boson in the mass range between ...",
+              "scope": "开放论文PDF全文"
+            },
+            {
+              "url": "https://cmsexperiment.web.cern.ch/news/using-golden-decay-channel-understand-production-higgs-boson",
+              "title": "Using the golden decay channel to understand the production of the Higgs boson | CMS Experiment",
+              "scope": "可访问网页文本"
+            },
+            {
+              "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.83.114034",
+              "title": "Central exclusive quark-antiquark dijet and standard model Higgs boson production in proton-(anti)proton collisions  |  Phys. Rev. D",
+              "scope": "可访问网页文本"
+            }
+          ]
+        }
+      ],
+      "revision": "初轮自动测试",
+      "generatedAt": "2026-10-05T05:36:30.197Z"
+    },
+    {
+      "id": "original-control",
+      "title": "原创中英文负例",
+      "status": "partial",
+      "seconds": 42,
+      "expectedScore": 0,
+      "actualScore": 0,
+      "copySegments": 0,
+      "fullyMatchedCopies": 0,
+      "partiallyMatchedCopies": 0,
+      "originalSentences": 3,
+      "flaggedOriginalSentences": 0,
+      "falseHighlights": [],
+      "readableSources": 23,
+      "fulltextSources": 4,
+      "abstractOnlySources": 4,
+      "providerStats": {
+        "网页检索": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 0
+        },
+        "Crossref": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 12,
+          "errors": 0
+        },
+        "arXiv": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "Europe PMC": {
+          "calls": 3,
+          "successes": 3,
+          "candidates": 0,
+          "errors": 0
+        },
+        "开放期刊会议网站": {
+          "calls": 3,
+          "successes": 1,
+          "candidates": 4,
+          "errors": 2
+        }
+      },
+      "copyRows": [],
+      "revision": "初轮自动测试",
+      "generatedAt": "2026-10-05T05:36:58.199Z"
+    }
+  ]
+}

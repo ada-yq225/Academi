@@ -1,0 +1,155 @@
+{
+  "similarity": 0,
+  "matchedCharacters": 0,
+  "totalCharacters": 222,
+  "minMatchTokens": 5,
+  "matchThresholds": {
+    "english": 5,
+    "chinese": 10
+  },
+  "results": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 94,
+      "text": "Our evaluation distinguishes missing search coverage from evidence that a passage is original.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 81,
+      "similarity": 0
+    },
+    {
+      "index": 2,
+      "start": 96,
+      "end": 135,
+      "text": "本段为当前测试新编写的中文对照内容，用来观察没有预设摘录的文稿是否被错误高亮。",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 37,
+      "similarity": 0
+    },
+    {
+      "index": 3,
+      "start": 137,
+      "end": 261,
+      "text": "Each reported source must support a concrete matching span instead of being treated as relevant merely because of its title.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 104,
+      "similarity": 0
+    }
+  ],
+  "sources": [],
+  "status": "partial",
+  "diagnostics": [
+    {
+      "stage": "开放期刊会议网站",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.2139/ssrn.6645601",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://openreview.net/pdf/f3cd8caa6561ec14d6c17f9dfc568a7bed711c3e.pdf",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1142/9789814616980_0007",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.31235/osf.io/9jpqh_v1",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.3366/edinburgh/9780748697908.003.0006",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://zhuanlan.zhihu.com/p/553201758",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://bentleysystems.service-now.com/community?id=kb_article_view&sysparm_article=KB0114380",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://bentleysystems.service-now.com/community?id=community_question&sys_id=013c830347a71a10557fd8de536d43ca",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1002/suco.202200110",
+      "error": "不能访问内网地址"
+    }
+  ],
+  "coverage": {
+    "sentences": 3,
+    "querySentences": 3,
+    "successfulSearchCalls": 13,
+    "queries": [
+      "Our evaluation distinguishes missing search coverage from evidence that a passage is original.",
+      "本段为当前测试新编写的中文对照内容，用来观察没有预设摘录的文稿是否被错误高",
+      "source must support a concrete matching span instead of being treated as"
+    ],
+    "providers": {
+      "网页检索": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 0
+      },
+      "Crossref": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 0
+      },
+      "arXiv": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "Europe PMC": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "开放期刊会议网站": {
+        "calls": 3,
+        "successes": 1,
+        "candidates": 4,
+        "errors": 2
+      }
+    },
+    "cachedSources": 0,
+    "candidates": 28,
+    "fetchedCandidates": 28,
+    "readableSources": 23,
+    "fulltextSources": 4,
+    "abstractOnlySources": 4,
+    "unfetchedCandidates": 0,
+    "note": "在已获取来源中的文字重复占比；不代表全互联网重复率。未检索片段仍与全部已获取来源比对。"
+  },
+  "generatedAt": "2026-10-05T05:36:58.199Z"
+}

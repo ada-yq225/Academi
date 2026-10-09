@@ -1,0 +1,224 @@
+{
+  "similarity": 16,
+  "matchedCharacters": 23,
+  "totalCharacters": 147,
+  "minMatchTokens": 5,
+  "matchThresholds": {
+    "english": 5,
+    "chinese": 10
+  },
+  "results": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 33,
+      "text": "本组针对中文期刊的公开网页进行测试，确认汉字片段可以被检索并定位。",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 31,
+      "similarity": 0
+    },
+    {
+      "index": 2,
+      "start": 35,
+      "end": 59,
+      "text": "本文采用特征图切分的方式，从空间上对图像进行划分",
+      "spans": [
+        {
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-9",
+          "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+          "title": "结合特征图切分的图像语义分割",
+          "scope": "公开网页结构化正文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 24
+            }
+          ],
+          "excerpt": "无法改善小目标物体的分割性能。\n为了提高这些局部区域小目标的分割性能，本文采用特征图切分的方式，从空间上对图像进行划分，加强图像区域的局部判别，对局部区域内的小目标更为关注。本文提出了一个特征图切分模块，对不同尺度的特征图进行不同系数的切分(如2×2、3×3等份)，将某一尺度下的特征图切分成\n份，每份利用双线性插值上采样至原特征图大小，由于切分模块中划分了不同的空间区域并将这些区域放大，原来图像中某区域下的小目标物体就变成了大目标，在这种切分策略之下，这些切分块在特征提取过程中，就能更关注该局部区域内的语"
+        }
+      ],
+      "matchedCharacters": 23,
+      "totalCharacters": 23,
+      "similarity": 100
+    },
+    {
+      "index": 3,
+      "start": 61,
+      "end": 169,
+      "text": "We keep this English transition independent from the Chinese research excerpt to check bilingual boundaries.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 93,
+      "similarity": 0
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "title": "结合特征图切分的图像语义分割",
+      "provider": "DuckDuckGo",
+      "fulltextWarning": "PDF全文未读取：来源文件超过10 MB",
+      "scope": "公开网页结构化正文",
+      "truncated": false,
+      "id": "source-9"
+    }
+  ],
+  "status": "partial",
+  "diagnostics": [
+    {
+      "stage": "开放期刊会议网站",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "网页检索",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://blog.csdn.net/jupyter5notebook/article/details/153395330",
+      "error": "HTTP 521"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://blog.csdn.net/jupyter5notebook/article/details/153395339",
+      "error": "HTTP 521"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://m.36kr.com/p/3280847831605638",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.70693/fw391",
+      "error": "getaddrinfo ENOTFOUND wanfangdoi.top"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/00ed9ab006311be67879ecef8f80d7c5-Paper-Conference.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://openreview.net/group?id=EMNLP/2026",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://blog.csdn.net/qq_53171460/article/details/144721510",
+      "error": "HTTP 521"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://zhuanlan.zhihu.com/p/70758906",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.2139/ssrn.4677675",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://blog.csdn.net/qq_63520660/article/details/145653680",
+      "error": "HTTP 521"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.12677/aam.2016.51012",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1080/15235882.2025.2520225",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取PDF",
+      "url": "https://cjig.cn/zh/article/doi/10.11834/jig.180402/",
+      "error": "PDF全文未读取：来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1080/15235882.2004.10162614",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1080/15235882.2025.2511887",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.3788/ope.20162411.2830",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    }
+  ],
+  "coverage": {
+    "sentences": 3,
+    "querySentences": 3,
+    "successfulSearchCalls": 12,
+    "queries": [
+      "本组针对中文期刊的公开网页进行测试，确认汉字片段可以被检索并定位",
+      "本文采用特征图切分的方式，从空间上对图像进行划分",
+      "this English transition independent from the Chinese research excerpt to check bilingual"
+    ],
+    "providers": {
+      "网页检索": {
+        "calls": 3,
+        "successes": 2,
+        "candidates": 8,
+        "errors": 1
+      },
+      "Crossref": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 0
+      },
+      "arXiv": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "Europe PMC": {
+        "calls": 3,
+        "successes": 3,
+        "candidates": 0,
+        "errors": 0
+      },
+      "开放期刊会议网站": {
+        "calls": 3,
+        "successes": 1,
+        "candidates": 4,
+        "errors": 2
+      }
+    },
+    "cachedSources": 0,
+    "candidates": 24,
+    "fetchedCandidates": 24,
+    "readableSources": 9,
+    "fulltextSources": 2,
+    "abstractOnlySources": 0,
+    "unfetchedCandidates": 0,
+    "note": "在已获取来源中的文字重复占比；不代表全互联网重复率。未检索片段仍与全部已获取来源比对。"
+  },
+  "generatedAt": "2026-10-05T05:42:49.868Z"
+}

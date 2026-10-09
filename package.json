@@ -7,9 +7,10 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "vite build && node scripts/build-server.mjs",
+    "build": "vite build && node scripts/build-server.mjs && node --env-file-if-exists=.env scripts/publish-static.mjs",
     "start": "node --env-file-if-exists=.env dist/server.mjs",
-    "worker": "node --env-file-if-exists=.env worker/runner.mjs"
+    "worker": "node --env-file-if-exists=.env worker/runner.mjs",
+    "test:audit": "node scripts/build-audit.mjs && node --test tests/audit-regressions.mjs tests/paperdesk-provider.mjs tests/academi-accounts.mjs && node tests/audit-api.mjs"
   },
   "dependencies": {
     "class-variance-authority": "0.7.1",

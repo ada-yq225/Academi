@@ -1,0 +1,509 @@
+{
+  "similarity": 38,
+  "matchedCharacters": 309,
+  "totalCharacters": 808,
+  "minMatchTokens": 10,
+  "results": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 86,
+      "text": "Synthetic benchmark: regularization and stable optimization across publication venues.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 76,
+      "similarity": 0
+    },
+    {
+      "index": 2,
+      "start": 88,
+      "end": 182,
+      "text": "Deep neural nets with a large number of parameters are very powerful machine learning systems.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 93
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-2",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+          "title": "Deep Count: Fruit Counting Based on Deep Simulated Learning.",
+          "scope": "开放论文XML全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 93
+            }
+          ],
+          "excerpt": "y connected layer is 768. Although deep neural nets with a large number of parameters are very powerful machine learning systems, overfitting is a serious problem in such networks. Large networks are also slow to use, making it difficult to deal with over"
+        },
+        {
+          "id": "source-15",
+          "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 93
+            }
+          ],
+          "excerpt": "da.\nEditor: Yoshua Bengio\nAbstract\nDeep neural nets with a large number of parameters are very powerful machine learning\nsystems. However, overﬁtting is a serious problem in such networks. Large networks are also\nslow to use, making it diﬃcult to deal wit"
+        }
+      ],
+      "matchedCharacters": 79,
+      "totalCharacters": 79,
+      "similarity": 100
+    },
+    {
+      "index": 3,
+      "start": 184,
+      "end": 317,
+      "text": "This synthetic experiment connects regularization with optimization, but it does not claim to represent a published scientific study.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 114,
+      "similarity": 0
+    },
+    {
+      "index": 4,
+      "start": 319,
+      "end": 445,
+      "text": "Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 125
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-1",
+          "url": "https://arxiv.org/pdf/1502.03167v3",
+          "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 125
+            }
+          ],
+          "excerpt": " Inc., szegedy@google.com\nAbstract\nTraining Deep Neural Networks is complicated by the fact\nthat the distribution of each layer’s inputs changes during\ntraining, as the parameters of the previous layers change.\nThis slows down the training by requiring lo"
+        },
+        {
+          "id": "source-4",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+          "title": "Convolutional Autoencoder-Based Flaw Detection for Steel Wire Ropes.",
+          "scope": "开放论文XML全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 125
+            }
+          ],
+          "excerpt": "connected layers in decoders [25]. Training deep neural networks is complicated by the fact that the distribution of each layer’s inputs changes during training, as the parameters of the previous layers change [26]. To address the problem, in this study, "
+        }
+      ],
+      "matchedCharacters": 107,
+      "totalCharacters": 107,
+      "similarity": 100
+    },
+    {
+      "index": 5,
+      "start": 447,
+      "end": 580,
+      "text": "The benchmark deliberately combines small excerpts from different publication venues with independently written transition sentences.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 118,
+      "similarity": 0
+    },
+    {
+      "index": 6,
+      "start": 582,
+      "end": 724,
+      "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 141
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-5",
+          "url": "https://arxiv.org/pdf/1706.03762v7",
+          "title": "Attention Is All You Need",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "excerpt": "llia.polosukhin@gmail.com\nAbstract\nThe dominant sequence transduction models are based on complex recurrent or\nconvolutional neural networks that include an encoder and a decoder. The best\nperforming models also connect the encoder and decoder through an "
+        },
+        {
+          "id": "source-33",
+          "url": "https://arxiv.org/html/1706.03762v6",
+          "title": "Attention Is All You Need",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "excerpt": "llia.polosukhin@gmail.com Abstract The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an "
+        },
+        {
+          "id": "source-34",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "title": "[1706.03762] Attention Is All You Need",
+          "scope": "开放论文PDF全文",
+          "spans": [
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "excerpt": "llia.polosukhin@gmail.com\nAbstract\nThe dominant sequence transduction models are based on complex recurrent or\nconvolutional neural networks that include an encoder and a decoder. The best\nperforming models also connect the encoder and decoder through an "
+        },
+        {
+          "id": "source-36",
+          "url": "https://research.google.com/pubs/pub46201.html?source=post_page---------------------------",
+          "title": "Attention is All You Need",
+          "scope": "可访问网页文本",
+          "spans": [
+            {
+              "start": 0,
+              "end": 141
+            }
+          ],
+          "excerpt": "org/pdf/1706.03762.pdf} } Abstract The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an at"
+        }
+      ],
+      "matchedCharacters": 123,
+      "totalCharacters": 123,
+      "similarity": 100
+    },
+    {
+      "index": 7,
+      "start": 726,
+      "end": 777,
+      "text": "本测试把期刊、会议与公开作者版本中的短片段混合，检查检索覆盖和逐句定位，不把搜索不到的内容判定为原创。",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 47,
+      "similarity": 0
+    },
+    {
+      "index": 8,
+      "start": 779,
+      "end": 903,
+      "text": "We measure whether the checker can discover those sources automatically rather than being handed the expected web addresses.",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 106,
+      "similarity": 0
+    },
+    {
+      "index": 9,
+      "start": 905,
+      "end": 945,
+      "text": "测试结果应分别报告开放全文与摘要覆盖，避免把只有论文标题的检索结果当作全文证据。",
+      "spans": [],
+      "sources": [],
+      "matchedCharacters": 0,
+      "totalCharacters": 38,
+      "similarity": 0
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/1502.03167v3",
+      "landingUrl": "https://arxiv.org/abs/1502.03167v3",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "abstract": "Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-1"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5426829/fullTextXML",
+      "title": "Deep Count: Fruit Counting Based on Deep Simulated Learning.",
+      "abstract": "Recent years have witnessed significant advancement in computer vision research based on deep learning. Success of these tasks largely depends on the availability of a large amount of training samples. Labeling the training samples is an expensive process. In this paper, we present a simulated deep convolutional neural network for yield estimation. Knowing the exact number of fruits, flowers, and trees helps farmers to make better decisions on cultivation practices, plant disease prevention, and the size of harvest labor force. The current practice of yield estimation based on the manual counting of fruits or flowers by workers is a very time consuming and expensive process and it is not practical for big fields. Automatic yield estimation based on robotic agriculture provides a viable solution in this regard. Our network is trained entirely on synthetic data and tested on real data. To capture features on multiple scales, we used a modified version of the Inception-ResNet architecture. Our algorithm counts efficiently even if fruits are under shadow, occluded by foliage, branches, or if there is some degree of overlap amongst fruits. Experimental results show a 91% average test accuracy on real images and 93% on synthetic images.",
+      "doi": "10.3390/s17040905",
+      "provider": "Europe PMC",
+      "workType": "research-article, Journal Article",
+      "representation": "fulltext-xml",
+      "scope": "开放论文XML全文",
+      "truncated": false,
+      "id": "source-2"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7699151/fullTextXML",
+      "title": "Convolutional Autoencoder-Based Flaw Detection for Steel Wire Ropes.",
+      "abstract": "Visual perception-based methods are a promising means of capturing the surface damage state of wire ropes and hence provide a potential way to monitor the condition of wire ropes. Previous methods mainly concentrated on the handcrafted feature-based flaw representation, and a classifier was constructed to realize fault recognition. However, appearances of outdoor wire ropes are seriously affected by noises like lubricating oil, dust, and light. In addition, in real applications, it is difficult to prepare a sufficient amount of flaw data to train a fault classifier. In the context of these issues, this study proposes a new flaw detection method based on the convolutional denoising autoencoder (CDAE) and Isolation Forest (iForest). CDAE is first trained by using an image reconstruction loss. Then, it is finetuned to minimize a cost function that penalizes the iForest-based flaw score difference between normal data and flaw data. Real hauling rope images of mine cableways were used to test the effectiveness and advantages of the newly developed method. Comparisons of various methods showed the CDAE-iForest method performed better in discriminative feature learning and flaw isolation with a small amount of flaw training data.",
+      "doi": "10.3390/s20226612",
+      "provider": "Europe PMC",
+      "workType": "research-article, Journal Article",
+      "representation": "fulltext-xml",
+      "scope": "开放论文XML全文",
+      "truncated": false,
+      "id": "source-4"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1706.03762v7",
+      "landingUrl": "https://arxiv.org/abs/1706.03762v7",
+      "title": "Attention Is All You Need",
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+      "provider": "arXiv",
+      "workType": "预印本/作者公开版本",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-5"
+    },
+    {
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "provider": "DuckDuckGo",
+      "fulltextUrl": "http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-15"
+    },
+    {
+      "url": "https://arxiv.org/html/1706.03762v6",
+      "title": "Attention Is All You Need",
+      "provider": "DuckDuckGo",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-33"
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need",
+      "provider": "DuckDuckGo",
+      "fulltextUrl": "https://arxiv.org/pdf/1706.03762",
+      "scope": "开放论文PDF全文",
+      "truncated": false,
+      "id": "source-34"
+    },
+    {
+      "url": "https://research.google.com/pubs/pub46201.html?source=post_page---------------------------",
+      "title": "Attention is All You Need",
+      "provider": "DuckDuckGo",
+      "scope": "可访问网页文本",
+      "truncated": false,
+      "id": "source-36"
+    }
+  ],
+  "status": "partial",
+  "diagnostics": [
+    {
+      "stage": "开放期刊会议网站",
+      "query": 2,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 3,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 4,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 5,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 7,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "开放期刊会议网站",
+      "query": 8,
+      "error": "免费搜索触发验证，未取得检索结果"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.7717/peerjcs.1202/fig-7",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.7717/peerj-cs.233/supp-2",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1021/acs.jctc.1c00159.s001",
+      "error": "不能访问内网地址"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.7717/peerjcs.790/table-1",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1007/11510888_23",
+      "error": "来源跳转过多"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/92059c0ca1f2db0018e49b588d4f05e9-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "error": "来源文件超过10 MB"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://medium.com/matrixntensors/beyond-the-bloat-over-parameterization-in-neural-models-42e47f6d2ddd",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.7551/mitpress/7475.003.0007",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1016/j.neunet.2026.108747",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1016/j.neunet.2025.107959",
+      "error": "来源全文不可读取，可能需要登录或OCR"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.2172/7351624",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1177/0003603x7602100207",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1021/acs.iecr.1c04712.s001",
+      "error": "不能访问内网地址"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://openreview.net/pdf?id=RIZCe7BuEp",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1101/2021.03.01.433444",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.sciencedirect.com/topics/computer-science/neural-network",
+      "error": "不能访问内网地址"
+    },
+    {
+      "stage": "读取PDF",
+      "url": "https://doi.org/10.70693/202607241664",
+      "error": "PDF全文未读取：The operation was aborted due to timeout"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.scribbr.com/working-with-sources/synthesizing-sources/",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.1021/acssensors.6c04079",
+      "error": "不能访问内网地址"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.18356/9789211545265c012",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://www.turnitin.com/blog/what-is-mosaic-plagiarism-examples-types-and-how-to-avoid-it",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.15288/jsad-ft.05.24.2022-3",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://doi.org/10.18356/9789211545265c014",
+      "error": "HTTP 403"
+    },
+    {
+      "stage": "读取来源",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Metadata.json",
+      "error": "来源不包含可读取的文本"
+    }
+  ],
+  "coverage": {
+    "sentences": 9,
+    "querySentences": 9,
+    "successfulSearchCalls": 39,
+    "providers": {
+      "网页检索": {
+        "calls": 9,
+        "successes": 9,
+        "candidates": 36,
+        "errors": 0
+      },
+      "Crossref": {
+        "calls": 9,
+        "successes": 9,
+        "candidates": 27,
+        "errors": 0
+      },
+      "arXiv": {
+        "calls": 9,
+        "successes": 9,
+        "candidates": 2,
+        "errors": 0
+      },
+      "Europe PMC": {
+        "calls": 9,
+        "successes": 9,
+        "candidates": 2,
+        "errors": 0
+      },
+      "开放期刊会议网站": {
+        "calls": 9,
+        "successes": 3,
+        "candidates": 12,
+        "errors": 6
+      }
+    },
+    "candidates": 78,
+    "fetchedCandidates": 60,
+    "readableSources": 38,
+    "fulltextSources": 17,
+    "abstractOnlySources": 1,
+    "unfetchedCandidates": 18,
+    "note": "在已获取来源中的文字重复占比；不代表全互联网重复率。未检索片段仍与全部已获取来源比对。"
+  },
+  "generatedAt": "2026-10-05T04:59:54.484Z"
+}

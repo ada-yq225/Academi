@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {extractHtml,extractXml,normalizeExtractedText} from '../retrieval.mjs';
+test('PDF wrapped words and ligature normalization preserve scientific words',()=>assert.equal(normalizeExtractedText('regulari-\nzation soft\u00adhyphen'), 'regularization softhyphen'));
+test('Adjacent HTML paragraphs do not concatenate words',()=>assert.equal(extractHtml('<body><p>First paragraph</p><p>Second paragraph</p></body>').text,'First paragraph Second paragraph'));
+test('JATS XML keeps full article text and paragraph boundaries',()=>{const r=extractXml('<article><abstract><p>Abstract text.</p></abstract><body><sec><p>Body research findings.</p><p>Second paragraph.</p></sec></body></article>');assert.match(r.text,/Body research findings\.\nSecond paragraph/);assert.ok(r.text.includes('Abstract text.'));});
